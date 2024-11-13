@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import NextTopLoader from "nextjs-toploader";
 
 import { lightTheme, darkTheme } from "@/constants/theme"; // Import your themes
+import "@/styles/globals.css"; // Import your global styles
 import GlobalStyles from "@/constants/globalStyles";
 import GradientAnimation from "@/components/gradientAnimation/GradientAnimation";
 import Layout from "@/components/layout";

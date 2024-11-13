@@ -6,10 +6,10 @@ Welcome to the official website of Geek Room Plaksha Chapter! This site is a col
 
 The website is built with **Next.js 15**, leveraging various component libraries to enhance its design, usability, and functionality. Here’s a rundown of the tools and libraries we've used:
 
-- **shadcn**: For accessible and well-styled component design.
-- **magicui**: Bringing creative and modern UI elements to the site.
-- **acerternity**: A lightweight component library for responsive layouts.
-- **chakra-ui**: Used for building beautiful, reusable, and customizable UI components.
+- **shadcn**
+- **magic-ui**
+- **acerternity-ui**
+- **chakra-ui**
 - **Open Source Components**: We've incorporated various components from open-source projects available on GitHub to enrich the site's functionality.
 
 ## Contributing

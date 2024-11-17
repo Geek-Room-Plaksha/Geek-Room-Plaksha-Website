@@ -13,18 +13,18 @@ const staticEventsData = [
     venue: "Room 1001",
     status: "upcoming",
     registrationLink:
-      "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university"
+      "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university",
     // resourcesLink:
     // "https://plakshauniversity1-my.sharepoint.com/...your_shared_resource_link...",
-    // speakers: [
-    //   {
-    //     id: 1,
-    //     name: "Akshat Gupta",
-    //     profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-    //     image: "/images/team/Akshat.png"
-    //     // title: "Instructor"
-    //   }
-    // ]
+    speakers: [
+      {
+        id: 1,
+        name: "Akshat Gupta",
+        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
+        image: "/images/team/Akshat.png"
+        // title: "Instructor"
+      }
+    ]
   },
   {
     slug: "Gear-Up",
@@ -38,7 +38,7 @@ const staticEventsData = [
     startDate: "2024-11-14T17:30:00",
     endDate: "2024-11-14T20:00:00",
     venue: "Room 1001",
-    status: "upcoming",
+    status: "ended",
     registrationLink: "https://forms.office.com/r/m4vCPMifmn?origin=lprLink",
     // resourcesLink:
     // "https://plakshauniversity1-my.sharepoint.com/:b:/g/personal/akshat_gupta_ug23_plaksha_edu_in/resource-link",
@@ -132,7 +132,7 @@ const staticEventsData = [
   },
   {
     slug: "Git-Github",
-    title: "Git-Github Workshop",
+    title: "Git Github Workshop",
     shortDescription:
       "A beginner-friendly workshop to kickstart your open-source journey with Git and GitHub. Learn version control basics and make your first open-source contribution.",
     thumbnail: "/images/events/git/poster.jpg",

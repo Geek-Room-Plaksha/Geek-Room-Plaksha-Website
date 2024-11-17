@@ -14,26 +14,6 @@ import Layout from "@/components/layout";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/display/footer/Footer";
 
-// const myFont = localFont({
-//   src: [
-//     {
-//       path: "../public/fonts/GoogleSans-Regular.ttf",
-//       weight: "400",
-//       style: "normal"
-//     },
-//     {
-//       path: "../public/fonts/GoogleSans-Medium.ttf",
-//       weight: "500",
-//       style: "normal"
-//     },
-//     {
-//       path: "../public/fonts/GoogleSans-Bold.ttf",
-//       weight: "700",
-//       style: "normal"
-//     }
-//   ]
-// });
-
 const myFont = localFont({
   src: [
     {
@@ -47,7 +27,7 @@ const myFont = localFont({
       style: "normal"
     },
     {
-      path: "../public/fonts/Montserrat-Bold.ttf",
+      path: "../public/fonts/Fontspring-DEMO-integralcf-regular.otf",
       weight: "700",
       style: "normal"
     }

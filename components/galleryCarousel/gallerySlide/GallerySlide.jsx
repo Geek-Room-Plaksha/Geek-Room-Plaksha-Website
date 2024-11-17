@@ -32,12 +32,12 @@ const GallerySlide = ({ galleryImageData, isFocused }) => {
           {galleryImageData.title}
         </Typography>
         <div className="meta">
-          <Typography variant="h6" color="white">
+          {/* <Typography variant="h6" color="white">
             {dayjs(galleryImageData.date).format("MMMM YYYY")}
           </Typography>
           <Typography variant="h6" color="white">
             {"•"}
-          </Typography>
+          </Typography> */}
           <Typography variant="h6" color="white">
             {galleryImageData.event.title}
           </Typography>

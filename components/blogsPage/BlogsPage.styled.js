@@ -111,6 +111,12 @@ export const BlogsCard = styled(motion.article)`
     height: 100%;
     min-height: 280px;
   }
+
+  @media screen and (${devices.sm}) {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-top: 0.8em;
+  }
 `;
 
 export const BlogsFilterTitle = styled.div`
@@ -137,6 +143,10 @@ export const ImageContainer = styled(motion.div)`
   @media screen and (${devices.lg}) {
     width: 100%;
     border-radius: 10px 10px 0 0;
+  }
+
+  @media screen and (${devices.sm}) {
+    border-radius: 10px;
   }
 `;
 

@@ -25,7 +25,7 @@ export const EventCardContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 4em;
 `;
 
 export const EventCard = styled(Tilt).attrs(() => ({

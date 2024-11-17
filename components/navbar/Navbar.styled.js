@@ -9,7 +9,7 @@ export const MainContainer = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 12;
+  z-index: 1000;
   position: fixed;
   top: 0;
 `;

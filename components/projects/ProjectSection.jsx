@@ -1,111 +1,45 @@
 import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "styled-components";
-import Terminal from "./terminal/Terminal";
-
-import {
-  Button,
-  Container,
-  ProjectInfo,
-  ProjectCard,
-  ProjectCardContainer,
-  TopContainer,
-  ExploreButton,
-  ImageContainer,
-  TitleContainer,
-  AuthorInfo,
-  BottomContainer
-} from "./ProjectSection.styled";
+import { Container, TitleContainer } from "./ProjectSection.styled";
 import Typography from "../display/typography/Typography";
-import Avatar from "../avatar/Avatar";
-import truncateText from "@/utils/truncate";
-import isoToDate from "@/utils/isoToDate";
+import { ThreeDCardDemo } from "./3dCards/3Dproject";
+
+const projects = [
+  {
+    title: "Project One",
+    description: "Description for project one.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "/project-one"
+  },
+  {
+    title: "Project Two",
+    description: "Description for project two.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "/project-two"
+  }
+];
 
 function ProjectSection({ isMobile }) {
-  const limit = 200;
-
   const theme = useTheme();
-
-  const ProjectsData = [
-    {
-      id: 1,
-      title: "Sample Project 1",
-      shortDescription: "This is a short description of sample Project 1.",
-      thumbnail: "/images/sample1.png",
-      author: {
-        name: "Author 1",
-        image: "/images/author1.png"
-      },
-      date: "2023-10-01T00:00:00Z",
-      slug: "sample-Project-1"
-    },
-    {
-      id: 2,
-      title: "Sample Project 2",
-      shortDescription: "This is a short description of sample Project 2.",
-      thumbnail: "/images/sample2.png",
-      author: {
-        name: "Author 2",
-        image: "/images/author2.png"
-      },
-      date: "2023-10-02T00:00:00Z",
-      slug: "sample-Project-2"
-    }
-    // Add more static Project data as needed
-  ];
-
-  const cardsElement = ProjectsData.map((Project) => (
-    <ProjectCard key={Project.id}>
-      <TopContainer>
-        <ImageContainer>
-          <Image
-            src={Project.thumbnail ?? "/images/gdsc_fallback.png"}
-            fill="responsive"
-            alt={Project.title}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
-            style={{
-              borderRadius: "8px",
-              objectFit: "cover"
-            }}
-          />
-        </ImageContainer>
-        <Typography variant="h4">{Project.title}</Typography>
-        <Typography variant="bodySmall">
-          {truncateText(Project.shortDescription, limit)}
-        </Typography>
-      </TopContainer>
-      <BottomContainer>
-        <ProjectInfo>
-          <AuthorInfo>
-            <Avatar
-              url={Project.author.image}
-              size="xs"
-              blur={false}
-              borderWidth={"2px"}
-              borderColor={theme.colors.brandBlue}
-            />
-            <Typography variant="bodySmall">{Project.author.name}</Typography>
-          </AuthorInfo>
-          <Typography variant="bodySmall">{isoToDate(Project.date)}</Typography>
-        </ProjectInfo>
-        <Link
-          href={`/Projects/${Project.slug}`}
-          style={{ textDecoration: "none" }}
-        >
-          <Button>Read more</Button>
-        </Link>
-      </BottomContainer>
-    </ProjectCard>
-  ));
 
   return (
     <Container style={{ paddingTop: "120px" }}>
       <TitleContainer>
         <Typography variant="h1">Our Projects</Typography>
       </TitleContainer>
-      {/* <ProjectCardContainer>{cardsElement}</ProjectCardContainer> */}
-      <Terminal />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {projects.map((project, index) => (
+          <ThreeDCardDemo
+            key={index}
+            title={project.title}
+            description={project.description}
+            imageUrl={project.imageUrl}
+            link={project.link}
+          />
+        ))}
+      </div>
     </Container>
   );
 }

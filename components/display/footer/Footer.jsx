@@ -157,7 +157,7 @@ function Footer({ toggleTheme, isDarkMode }) {
             paddingRight: isMobile ? 0 : "initial"
           }}
         >
-          Built with contributions<br></br>from open-source resources.
+          Want to contribute to this website ?<br></br>Feel free to do so !
         </div>
         <Authors>
           <Typography
@@ -165,7 +165,7 @@ function Footer({ toggleTheme, isDarkMode }) {
             subdued
             style={{ whiteSpace: "normal", width: "90%" }}
           >
-            Made with ❤️ <br></br>by{" "}
+            Made by{" "}
             <a
               href="https://www.linkedin.com/in/akshat-gupta-840740285/"
               style={{ color: "#f15b22", textDecoration: "none" }}

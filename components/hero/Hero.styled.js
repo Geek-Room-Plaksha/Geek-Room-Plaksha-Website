@@ -44,17 +44,17 @@ export const HeroTextContainer = styled.div`
 `;
 
 export const HeroTextSpan = styled.span`
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.contentPrimary};
   transition: font-size 0.5s ease-in-out, color 0.2s ease-in-out;
   cursor: url("/cursors/cursor-pointer.svg") 10 0, auto;
   &:hover {
-    font-size: 100px;
+    font-size: 90px;
     color: ${({ color }) => (color ? color : "#FFF06C")};
   }
   @media (max-width: 768px) {
-    font-size: 58px;
+    font-size: 48px;
   }
 `;
 
@@ -146,8 +146,8 @@ const move = keyframes`
 `;
 
 export const HeroBackgroundTextSpan = styled.div`
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
   z-index: -1;
   padding: 5px 5px;
   position: absolute;
@@ -163,7 +163,7 @@ export const HeroBackgroundTextSpan = styled.div`
 
   animation: ${move} 5s ${({ delay }) => delay}s ease-in-out infinite;
   @media screen and (${devices.lg}) {
-    font-size: 20px;
+    font-size: 15px;
   }
 `;
 

@@ -152,18 +152,15 @@ function BlogsPage() {
                 ));
                 const AuthorElements = blog.authors.map((author, index) => (
                   <AuthorInfo key={index}>
-                    <Link
-                      href={`/profile/${author.username}`}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <Avatar
-                        url={author.image}
-                        size="xs"
-                        blur={false}
-                        borderWidth={"0px"}
-                      />
-                    </Link>
-                    <Typography variant="bodySmall">{author.name}</Typography>
+                    <Avatar
+                      url={author.image}
+                      size="xs"
+                      blur={false}
+                      borderWidth={"0px"}
+                    />
+                    {!isMobile && (
+                      <Typography variant="bodySmall">{author.name}</Typography>
+                    )}
                   </AuthorInfo>
                 ));
                 return blog.link ? (
@@ -258,7 +255,7 @@ function BlogsPage() {
             <RightContainer isVisible={showBackground}>
               {!isMobile && (
                 <Typography variant="h3" style={{ paddingLeft: "0.5em" }}>
-                  Tags
+                  Media
                 </Typography>
               )}
               <FilterContainer>{filterElements}</FilterContainer>

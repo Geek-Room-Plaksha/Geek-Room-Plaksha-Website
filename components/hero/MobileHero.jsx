@@ -15,7 +15,7 @@ const MobileHero = () => {
     () => [
       { text: "Web", id: "web", color: "#f15b22", x: 60, y: 12, delay: 0.1 },
       {
-        text: "Tensorflow",
+        text: "AI ML",
         id: "tensorflow",
         color: "#FBBC04",
         x: 13,
@@ -23,7 +23,7 @@ const MobileHero = () => {
         delay: 0.4
       },
       {
-        text: "Kotlin",
+        text: "Android",
         id: "android",
         color: "#00acb2",
         x: 10,
@@ -31,7 +31,7 @@ const MobileHero = () => {
         delay: 1.2
       },
       {
-        text: "Flutter",
+        text: "DSA",
         id: "flutter",
         color: "#4285F4",
         x: 60,
@@ -69,7 +69,7 @@ const MobileHero = () => {
         delay: 0.3
       },
       {
-        url: "/images/hero/Christopher.jpg",
+        url: "/images/team/trinav.jpg",
         borderColor: "#4285F4",
         id: "a4",
         x: 67,

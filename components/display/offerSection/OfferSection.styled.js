@@ -3,46 +3,81 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  min-height: 100dvh;
-  height: 100%;
-  padding: 2em 10em;
+  min-height: 100vh;
+  padding: 4rem 8rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  background-color: ${({ theme }) => theme.colors.background};
 
   @media screen and (${devices.lg}) {
-    padding-inline: 2em;
+    padding: 3rem 4rem;
   }
 
   @media screen and (${devices.sm}) {
-    padding-inline: 0;
+    padding: 2rem 1rem;
   }
 `;
 
 export const Title = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    @media screen and (${devices.sm}) {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const OffersContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 2em;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  @media screen and (${devices.lg}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   @media screen and (${devices.md}) {
-    align-items: center;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+`;
+
+export const OfferCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: ${({ theme }) =>
+    theme.colors.cardBackground || "rgba(255, 255, 255, 0.05)"};
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
   }
 `;
 
 export const OfferLogo = styled.div`
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  margin-bottom: 1.5rem;
   background-image: ${({ bgcolor }) =>
     `linear-gradient(120deg, ${bgcolor[0]} 0%, ${bgcolor[1]} 100%)`};
   border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
@@ -50,6 +85,12 @@ export const OfferLogo = styled.div`
   transform-style: preserve-3d;
   outline: 1px solid transparent;
   will-change: border-radius;
+
+  svg {
+    width: 60px;
+    height: 60px;
+    color: white;
+  }
 
   &:before,
   &:after {
@@ -81,13 +122,6 @@ export const OfferLogo = styled.div`
     animation: morph 3s linear infinite;
     animation-delay: 400ms;
     opacity: 0.89;
-    line-height: 120px;
-  }
-
-  @media screen and (${devices.sm}) {
-    width: 110px;
-    height: 110px;
-    padding: 2em;
   }
 
   @keyframes morph {
@@ -109,39 +143,25 @@ export const OfferLogo = styled.div`
       transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
     }
   }
-
-  @keyframes fadeIn {
-    100% {
-      transform: scale(1.03);
-      opacity: 0;
-    }
-  }
-`;
-
-export const OfferCard = styled.div`
-  display: flex;
-  width: 80%;
-  gap: 4em;
-  align-items: center;
-  margin-block: 2.5em;
-
-  @media screen and (${devices.md}) {
-    gap: 2em;
-    justify-content: center;
-  }
 `;
 
 export const OfferInfo = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
-  gap: 0.5em;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 
-  @media screen and (${devices.md}) {
-    width: 70%;
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
 
-  @media screen and (${devices.sm}) {
-    width: 50%;
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: ${({ theme }) => theme.colors.text || "rgba(255, 255, 255, 0.8)"};
+    max-width: 300px;
   }
 `;

@@ -40,7 +40,7 @@ const Hero = ({ isMobile }) => {
     () => [
       { text: "Web", id: "web", color: "#f15b22", x: 55, y: 20, delay: 0.1 },
       {
-        text: "Tensorflow",
+        text: "AI ML",
         id: "tensorflow",
         color: "#FBBC04",
         x: 38,
@@ -48,7 +48,7 @@ const Hero = ({ isMobile }) => {
         delay: 0.4
       },
       {
-        text: "Kotlin",
+        text: "Android",
         id: "android",
         color: "#00acb2",
         x: 20,
@@ -56,7 +56,7 @@ const Hero = ({ isMobile }) => {
         delay: 1.2
       },
       {
-        text: "Unity",
+        text: "DSA",
         id: "flutter",
         color: "#4285F4",
         x: 80,
@@ -86,7 +86,7 @@ const Hero = ({ isMobile }) => {
         delay: 1.5
       },
       {
-        url: "/images/hero/Christopher.jpg",
+        url: "/images/team/trinav.jpg",
         borderColor: "#00acb2",
         id: "a3",
         x: 18,
@@ -138,7 +138,7 @@ const Hero = ({ isMobile }) => {
       {!isMobile ? (
         <ScrollContainer snap="none">
           <ScrollPage>
-            <Animator animation={batch(Fade(), Sticky(), MoveIn())}>
+            <Animator animation={batch(Fade(-0.5), Sticky(), MoveIn())}>
               <HeroBackgroundContainer>
                 <div className="mainText">
                   <HeroTextSpan

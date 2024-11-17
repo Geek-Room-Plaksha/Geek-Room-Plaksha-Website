@@ -6,6 +6,10 @@ import GalleryCarousel from "@/components/galleryCarousel/GalleryCarousel";
 import Hero from "@/components/hero/Hero";
 import Intro from "@/components/intro/Intro";
 import { devices } from "@/constants/theme";
+import { AnimatedTestimonialsDemo } from "@/components/Highlights/PastHighlightes";
+import PartnersSection from "@/components/collaborations/Collab";
+import ContactForm from "@/components/contack-us/contact-us";
+import StatsDisplay from "@/components/Strip/strip";
 
 export default function Home() {
   const [isSmall, setIsSmall] = useState(false);
@@ -53,9 +57,12 @@ export default function Home() {
       <main>
         <Hero isMobile={isLarge} />
         <Intro isMobile={isSmall} />
-        <OfferSection isMobile={isMedium} />
+        <StatsDisplay></StatsDisplay>
+        {isSmall && <AnimatedTestimonialsDemo />}
         {!isSmall && <GalleryCarousel />}
-        
+        <OfferSection isMobile={isMedium} />
+        <PartnersSection></PartnersSection>
+        <ContactForm></ContactForm>
       </main>
     </>
   );

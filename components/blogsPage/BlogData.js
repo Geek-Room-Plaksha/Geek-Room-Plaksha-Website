@@ -1,7 +1,45 @@
 const blogData = {
   newsletters: [
     {
-      title: "#01",
+      title: "02",
+      slug: "newsletters",
+      thumbnail: "/images/media/newsletters/02.png",
+      shortDescription:
+        "Discover the latest in tech and space: Starlink's turbulent entry into India, Google's AI replies for calls, Jarvis assistant leaks, and Japan's revolutionary wooden satellite.",
+      tags: [
+        { label: "Technology" },
+        { label: "AI" },
+        { label: "Space" },
+        { label: "Innovation" },
+        { label: "Environment" }
+      ],
+      authors: [
+        {
+          username: "Trinav",
+          name: "Trinav",
+          image: "/images/team/trinav.jpg"
+        },
+        {
+          username: "Kuhuk",
+          name: "Kuhuk",
+          image: "/images/team/kuhuk.png"
+        },
+        {
+          username: "Shreya",
+          name: "Shreya",
+          image: "/images/team/shreya.png"
+        },
+        {
+          username: "Proshita",
+          name: "Proshita",
+          image: "/images/team/proshita.png"
+        }
+      ],
+      date: "2024-11-16T00:00:00Z",
+      link: "https://www.instagram.com/p/DCcEbXWSxEv/?img_index=1"
+    },
+    {
+      title: "01",
       slug: "newsletters",
       thumbnail: "/images/media/newsletters/01.png",
       shortDescription:

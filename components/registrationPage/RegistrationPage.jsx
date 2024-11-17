@@ -7,18 +7,12 @@ import {
   ActionsContainer,
   ApplyButton,
   ApplyNowContainer,
-  BannerImageContainer,
-  FAQButton,
-  ProceduresContainer,
-  ProcessCard,
   RegistrationPageContainer,
   TeamImageContainer,
   TitleContainer
 } from "./RegistrationPage.styled";
 import Typography from "../display/typography/Typography";
-import ApplicationIcon from "@public/icons/application.svg";
-import ClipboardIcon from "@public/icons/clipboard.svg";
-import UserIcon from "@public/icons/user.svg";
+import { MarqueeDemo } from "./Marquee";
 
 const applicationData = {
   isOpen: false,
@@ -26,24 +20,19 @@ const applicationData = {
 };
 
 const RegistrationPage = () => {
-  const ref1 = useRef();
-  const ref2 = useRef();
-  const ref3 = useRef();
-
   return (
     <RegistrationPageContainer style={{ paddingTop: "120px" }}>
       <TitleContainer>
-        <Typography variant="displayLarge">Join our amazing Team</Typography>
-
+        <Typography variant="displayLarge">
+          What are you waiting for?
+        </Typography>
         <Typography variant="body" className="descriptionText">
           {`If you're excited to learn and collaborate, don't wait.
           Apply now and embark on a journey of growth and opportunities!`}
         </Typography>
       </TitleContainer>
+      <MarqueeDemo></MarqueeDemo>
       <ApplyNowContainer>
-        <Typography variant="h3" style={{ textAlign: "center" }}>
-          What are you waiting for?
-        </Typography>
         <ActionsContainer>
           <Link
             href={applicationData.link ? applicationData.link : "#"}

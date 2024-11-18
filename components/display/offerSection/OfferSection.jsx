@@ -24,8 +24,8 @@ function OfferSection() {
       <OffersContainer>
         <OfferCard>
           <OfferLogo
-            bgcolor={["#0F9D58", "#64D8CB"]}
-            rgb="100, 216, 203"
+            bgcolor={["#FF5722", "#FF8A65"]}
+            rgb="255, 138, 101"
             delay={0}
           >
             <CubeSvg />
@@ -42,8 +42,8 @@ function OfferSection() {
 
         <OfferCard>
           <OfferLogo
-            bgcolor={["white", "white"]}
-            // rgb="111, 168, 255"
+            bgcolor={["#0F9D58", "#64D8CB"]}
+            rgb="100, 216, 203"
             delay={800}
           >
             <EventsSvg />
@@ -78,8 +78,8 @@ function OfferSection() {
 
         <OfferCard>
           <OfferLogo
-            bgcolor={["#FBBC04", "#FFD54F"]}
-            rgb="255, 213, 79"
+            bgcolor={["#0F9D58", "#64D8CB"]}
+            rgb="100, 216, 203"
             delay={200}
           >
             <ContentSvg />
@@ -96,8 +96,8 @@ function OfferSection() {
 
         <OfferCard>
           <OfferLogo
-            bgcolor={["#EA4335", "#FF6B6B"]}
-            rgb="255, 107, 107"
+            bgcolor={["#FF5722", "#FF8A65"]}
+            rgb="255, 138, 101"
             delay={400}
           >
             <MessageSvg />
@@ -114,8 +114,8 @@ function OfferSection() {
 
         <OfferCard>
           <OfferLogo
-            bgcolor={["#4285F4", "#6FA1FF"]}
-            rgb="111, 168, 255"
+            bgcolor={["#0F9D58", "#64D8CB"]}
+            rgb="100, 216, 203"
             delay={800}
           >
             <BookSvg />

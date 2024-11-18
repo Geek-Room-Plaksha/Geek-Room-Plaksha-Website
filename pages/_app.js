@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }) {
         {loading}
         <main className={myFont.className}>
           <NextTopLoader
-            color="#4285F4"
+            color="#f15b22"
             initialPosition={0.05}
             crawlSpeed={200}
             height={5}
@@ -66,7 +66,7 @@ export default function App({ Component, pageProps }) {
             showSpinner={false}
             easing="ease"
             speed={200}
-            shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+            shadow="0 0 10px #f15b22,0 0 5px #f15b22"
             template='<div class="bar" role="bar"><div class="peg"></div></div> 
   <div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
             zIndex={1600}

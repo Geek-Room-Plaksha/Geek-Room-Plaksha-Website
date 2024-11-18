@@ -17,7 +17,7 @@ const MobileHero = () => {
       {
         text: "AI ML",
         id: "tensorflow",
-        color: "#FBBC04",
+        color: "#f15b22",
         x: 13,
         y: 78,
         delay: 0.4
@@ -33,7 +33,7 @@ const MobileHero = () => {
       {
         text: "DSA",
         id: "flutter",
-        color: "#4285F4",
+        color: "#00acb2",
         x: 60,
         y: 80,
         delay: 2.3
@@ -54,7 +54,7 @@ const MobileHero = () => {
       },
       {
         url: "/images/hero/raghav.jpg",
-        borderColor: "#FBBC04",
+        borderColor: "#f15b22",
         id: "a2",
         x: 63,
         y: 55,
@@ -70,7 +70,7 @@ const MobileHero = () => {
       },
       {
         url: "/images/team/trinav.jpg",
-        borderColor: "#4285F4",
+        borderColor: "#00acb2",
         id: "a4",
         x: 67,
         y: 26,

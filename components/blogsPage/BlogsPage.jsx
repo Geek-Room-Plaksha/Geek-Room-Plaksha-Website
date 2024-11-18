@@ -105,13 +105,13 @@ function BlogsPage() {
       whileHover="hover"
       borderColor={
         isActive === filter.slug && isMobile
-          ? theme?.colors.brandGreen
+          ? theme?.colors.brandRed
           : theme?.colors.contentSecondary
       }
     >
       <Typography
         variant="bodyEmphasized"
-        color={isActive === filter.slug ? theme?.colors.brandGreen : "inherit"}
+        color={isActive === filter.slug ? theme?.colors.brandRed : "inherit"}
       >
         {filter.label}
       </Typography>
@@ -120,7 +120,7 @@ function BlogsPage() {
           <Typography
             variant="h5"
             color={
-              isActive === filter.slug ? theme?.colors.brandGreen : "inherit"
+              isActive === filter.slug ? theme?.colors.brandRed : "inherit"
             }
           >
             &rarr;

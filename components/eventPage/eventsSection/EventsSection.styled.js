@@ -77,7 +77,7 @@ export const Button = styled.button`
   overflow: hidden;
 
   &:hover {
-    box-shadow: 0 0 0 5px #3b83f65f;
+    box-shadow: 0 0 0 5px rgba(241, 91, 34, 0.3);
   }
 
   @media screen and (${devices.sm}) {

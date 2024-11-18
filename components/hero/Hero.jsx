@@ -38,11 +38,11 @@ const Hero = ({ isMobile }) => {
 
   const heroTextElements = useMemo(
     () => [
-      { text: "Web", id: "web", color: "#f15b22", x: 55, y: 20, delay: 0.1 },
+      { text: "Web", id: "web", color: "#00acb2", x: 55, y: 20, delay: 0.1 },
       {
         text: "AI ML",
         id: "tensorflow",
-        color: "#FBBC04",
+        color: "#f15b22",
         x: 38,
         y: 79,
         delay: 0.4
@@ -58,7 +58,7 @@ const Hero = ({ isMobile }) => {
       {
         text: "DSA",
         id: "flutter",
-        color: "#4285F4",
+        color: "#f15b22",
         x: 80,
         y: 80,
         delay: 2.3
@@ -79,7 +79,7 @@ const Hero = ({ isMobile }) => {
       },
       {
         url: "/images/hero/raghav.jpg",
-        borderColor: "#FBBC04",
+        borderColor: "#00acb2",
         id: "a2",
         x: 60,
         y: 65,
@@ -95,7 +95,7 @@ const Hero = ({ isMobile }) => {
       },
       {
         url: "/images/hero/arun.jpg",
-        borderColor: "#4285F4",
+        borderColor: "#f15b22",
         id: "a4",
         x: 74,
         y: 20,
@@ -107,7 +107,7 @@ const Hero = ({ isMobile }) => {
 
   const [isTextHighlighted, setIsTextHighlighted] = useState(false);
   const [isAvatarHighlighted, setIsAvatarHighlighted] = useState(false);
-  const [isGrowHightlighted, setIsGrowHighlighted] = useState(false);
+  const [isGrowHighlighted, setIsGrowHighlighted] = useState(false);
 
   const updatedXArrows = useXarrow();
   const handleUpdateXArrows = debounce(updatedXArrows, 100);
@@ -149,7 +149,7 @@ const Hero = ({ isMobile }) => {
                     Learn.
                   </HeroTextSpan>
                   <HeroTextSpan
-                    color="#4285F4"
+                    color="#f15b22"
                     onMouseEnter={() => setIsAvatarHighlighted(true)}
                     onMouseLeave={() => setIsAvatarHighlighted(false)}
                   >
@@ -166,7 +166,7 @@ const Hero = ({ isMobile }) => {
                 <Xwrapper>
                   {heroTextElements.map((element, index) => (
                     <HeroBackgroundTextSpan
-                      isHighlighted={isTextHighlighted}
+                      isHighlighted={isTextHighlighted || isGrowHighlighted}
                       top={element.y}
                       left={element.x}
                       key={index}
@@ -180,7 +180,7 @@ const Hero = ({ isMobile }) => {
                   ))}
                   {heroAvatarElements.map((element, index) => (
                     <HeroAvatarWrapper
-                      isHighlighted={isAvatarHighlighted || isGrowHightlighted}
+                      isHighlighted={isAvatarHighlighted || isGrowHighlighted}
                       top={element.y}
                       left={element.x}
                       key={index}
@@ -212,24 +212,24 @@ const Hero = ({ isMobile }) => {
                     strokeWidth={2}
                     zIndex={-2}
                     headColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isAvatarHighlighted
-                        ? "#4285F4"
+                        ? "#f15b22"
                         : "#F1F1F1"
                     }
                   />
@@ -248,24 +248,24 @@ const Hero = ({ isMobile }) => {
                     strokeWidth={2}
                     zIndex={-2}
                     headColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isAvatarHighlighted
-                        ? "#4285F4"
+                        ? "#f15b22"
                         : "#F1F1F1"
                     }
                   />
@@ -284,24 +284,24 @@ const Hero = ({ isMobile }) => {
                     strokeWidth={2}
                     zIndex={-2}
                     headColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isAvatarHighlighted
-                        ? "#4285F4"
+                        ? "#f15b22"
                         : "#F1F1F1"
                     }
                   />
@@ -321,21 +321,21 @@ const Hero = ({ isMobile }) => {
                     zIndex={-2}
                     strokeWidth={2}
                     headColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
@@ -358,21 +358,21 @@ const Hero = ({ isMobile }) => {
                     zIndex={-2}
                     strokeWidth={2}
                     headColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
@@ -395,21 +395,21 @@ const Hero = ({ isMobile }) => {
                     zIndex={-2}
                     strokeWidth={2}
                     headColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHightlighted
+                      isGrowHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"

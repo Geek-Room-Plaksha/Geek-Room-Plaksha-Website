@@ -8,16 +8,28 @@ const projects = [
   {
     title: "Project One",
     description: "Description for project one.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "/project-one"
+    imageUrl: "/images/cs.png",
+    link: "/project-one",
+    authors: [
+      {
+        username: "XYZ",
+        name: "XYZ",
+        image: "/images/avatar.png"
+      }
+    ]
   },
   {
     title: "Project Two",
     description: "Description for project two.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "/project-two"
+    imageUrl: "/images/cs.png",
+    link: "/project-two",
+    authors: [
+      {
+        username: "XYZ",
+        name: "XYZ",
+        image: "/images/avatar.png"
+      }
+    ]
   }
 ];
 
@@ -37,6 +49,8 @@ function ProjectSection({ isMobile }) {
             description={project.description}
             imageUrl={project.imageUrl}
             link={project.link}
+            authors={project.authors} // Pass the authors prop
+            isMobile={isMobile}
           />
         ))}
       </div>

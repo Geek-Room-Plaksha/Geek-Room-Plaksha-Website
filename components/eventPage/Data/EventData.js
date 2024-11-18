@@ -59,24 +59,10 @@ const staticEventsData = [
         // title: ""
       },
       {
-        id: 3,
-        name: "Soumya Pandey",
-        profileLink: "https://www.linkedin.com/in/soumya-pandey-89825323b/",
-        image: "/images/team/soumya.jpg"
-        // title: ""
-      },
-      {
         id: 4,
         name: "Arsh Arora",
         profileLink: "https://www.linkedin.com/in/arsh-arora-6aa00232a/",
         image: "/images/team/arsh.png"
-        // title: ""
-      },
-      {
-        id: 5,
-        name: "Avantika Bansal",
-        profileLink: "https://www.linkedin.com/in/avantika-bansal-9253b3278",
-        image: "/images/team/avantika.png"
         // title: ""
       }
     ]

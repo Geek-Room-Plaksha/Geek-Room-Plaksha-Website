@@ -35,16 +35,6 @@ const TeamPage = ({ teamData }) => {
   ];
   return (
     <TeamPageContainer>
-      {/* <Typography color={theme.colors.brandBlue} variant="h1">
-        {teamData.name}
-      </Typography> */}
-      {/* <LeadContainer>
-        <MemberCard
-          member={teamData.lead}
-          avatarBorderColor={theme.colors.brandBlue}
-          avatarSize={isMobile ? "lg" : "xl"}
-        />
-      </LeadContainer> */}
       <TeamContainer>
         <Typography variant="h2">Core Team</Typography>
         <TeamMembersWrapper>
@@ -52,8 +42,8 @@ const TeamPage = ({ teamData }) => {
             <MemberCard
               key={member.id}
               member={member}
-              avatarBorderColor={borderColors[index % 4]}
-              // avatarBorderColor="#f15b22"
+              // avatarBorderColor={borderColors[index % 4]}
+              avatarBorderColor="#f15b22"
               avatarSize={isMobile ? "lg" : "xl"}
             />
           ))}

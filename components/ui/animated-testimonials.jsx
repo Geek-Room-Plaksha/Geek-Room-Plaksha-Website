@@ -30,6 +30,15 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
   };
+
+  const handleDragEnd = (event, info) => {
+    if (info.offset.x < -50) {
+      handleNext();
+    } else if (info.offset.x > 50) {
+      handlePrev();
+    }
+  };
+
   return (
     <div className="max-w-sm md:max-w-4xl mx-auto antialiased px-4 md:px-8 lg:px-12 py-10">
       <div className="flex justify-center">
@@ -69,6 +78,9 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                     ease: "easeInOut"
                   }}
                   className="absolute inset-0 origin-bottom"
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  onDragEnd={handleDragEnd}
                 >
                   <Image
                     src={testimonial.src}
@@ -83,41 +95,21 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex justify-between flex-col">
+        <div className="flex justify-between flex-col h-48">
           <motion.div
             key={active}
-            initial={{
-              y: 20,
-              opacity: 0
-            }}
-            animate={{
-              y: 0,
-              opacity: 1
-            }}
-            exit={{
-              y: -20,
-              opacity: 0
-            }}
-            transition={{
-              duration: 0.2,
-              ease: "easeInOut"
-            }}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -20, opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
           >
             <h3 className="text-2xl text-white">{testimonials[active].name}</h3>
             <motion.p className="text-lg text-gray-500 mt-4 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5
-                  }}
-                  animate={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0
-                  }}
+                  initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
+                  animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
                   transition={{
                     duration: 0.2,
                     ease: "easeInOut",
@@ -130,7 +122,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4">
             <button
               onClick={handlePrev}
               className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"

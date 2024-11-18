@@ -40,7 +40,7 @@ function Intro({ isMobile }) {
   const avatarData = [
     {
       url: "/images/events/hero/Event1.jpg",
-      borderColor: theme.colors.brandBlue,
+      borderColor: "#bbbbbb",
       x: 0,
       y: 30
     },
@@ -61,7 +61,7 @@ function Intro({ isMobile }) {
   const floatingLabelData = [
     {
       label: "Projects",
-      color: theme.colors.brandBlue,
+      color: "##bbbbbb",
       x: isMobile ? -20 : -50,
       y: isMobile ? 150 : 210
     },

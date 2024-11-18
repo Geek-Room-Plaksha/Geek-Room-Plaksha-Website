@@ -1,13 +1,12 @@
 // #00acb2 GR GREEN
 // #f15b22 GR ORANGE
-// #e7e8e7 GR GREY
 
 export const lightTheme = {
   type: "light",
   colors: {
-    brandRed: "#f15b22", // EA4335
+    brandRed: "#f15b22",
     brandYellow: "#FBBC04",
-    brandGreen: "#00acb2", // 0F9D58
+    brandGreen: "#00acb2",
     brandBlue: "#4285F4",
     bgPrimary: "#FFFFFF",
     bgSecondary: "#E9E9E9",
@@ -20,10 +19,10 @@ export const lightTheme = {
 export const darkTheme = {
   type: "dark",
   colors: {
-    brandRed: "#f15b22", //
+    brandRed: "#f15b22",
     brandYellow: "#FBBC04",
-    brandGreen: "#00acb2", //
-    brandBlue: "#4285F4",
+    brandGreen: "#00acb2",
+    brandBlue: "#f15b22", //
     bgPrimary: "#131313",
     bgSecondary: "#292929",
     bgTertiary: "#e9e9e9",

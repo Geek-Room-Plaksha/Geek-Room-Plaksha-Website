@@ -90,7 +90,7 @@ export const ApplyButton = styled.button`
     top: 180%;
     width: 160%;
     height: 190%;
-    background-color: #0a5ce4;
+    background-color: #00acb2;
     border-radius: 50%;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
@@ -98,19 +98,19 @@ export const ApplyButton = styled.button`
 
   &:hover {
     color: #ffffff;
-    border: 2px solid #0a5ce4;
+    border: 2px solid #00acb2;
     transform: scale(1.05);
   }
 
   &:hover:before {
     top: -35%;
-    background-color: #0a5ce4;
+    background-color: #00acb2;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
 
   &:hover:after {
     top: -45%;
-    background-color: #0a5ce4;
+    background-color: #00acb2;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
 

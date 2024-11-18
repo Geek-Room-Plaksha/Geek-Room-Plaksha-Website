@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export default function NumberTicker({
   value,
   direction = "up",
-  delay = 3,
+  delay = 2,
   className,
   decimalPlaces = 0
 }) {
@@ -23,7 +23,7 @@ export default function NumberTicker({
 
   // Detect if the user is on a phone
   const isPhone = typeof window !== "undefined" && window.innerWidth <= 768;
-  const adjustedDelay = isPhone ? 1 : delay;
+  const adjustedDelay = isPhone ? 0.65 : delay;
 
   useEffect(() => {
     if (isInView) {

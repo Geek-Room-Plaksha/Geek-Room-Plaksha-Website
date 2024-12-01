@@ -3,17 +3,17 @@ const staticEventsData = [
     slug: "Code-Clash",
     title: "Code Clash",
     shortDescription:
-      "An exciting coding event hosted by Geek Room Plaksha in collaboration with GeeksforGeeks. Compete, solve challenges, and win cash prizes!",
+      "An exciting coding event hosted by Geek Room Plaksha in collaboration with GeeksforGeeks and a prize pool of ₹8,000.",
     thumbnail: "/images/events/code-clash/poster.jpg",
     coverPhoto: "/images/events/code-clash/cover1.png",
     description:
-      "<p>An exciting coding challenge hosted by Geek Room Plaksha in collaboration with GeeksforGeeks! Participants will test their coding skills by solving real-world problems and competing with peers for cash prizes, exclusive goodies, and participation certificates.</p><p><strong>Highlights:</strong></p><ul><li>💻 Solve real-world problems and compete with peers.</li><li>🏆 Cash prizes worth ₹3,000.</li><li>🎁 Exclusive Goodies for everyone.</li><li>🏅 Participation Certificate for all attendees.</li><li>🛍️ Instantly get a 20% discount Coupon on GeeksforGeeks when you register.</li></ul>",
+      "<p>An exciting coding challenge hosted by Geek Room Plaksha in collaboration with GeeksforGeeks! Participants will test their coding skills by solving real-world problems and competing with peers for cash prizes, exclusive goodies, and participation certificates.</p><p><strong>Highlights:</strong></p><ul><li>💻 Solve real-world problems and compete with peers.</li><li>🏆 Cash prizes worth <strong>₹3,000</strong>.</li><li>🎁 Exclusive Goodies for everyone worth <strong>₹5,500</strong>.</li><li>🏅 Participation Certificate for all attendees.</li><li>🛍️ Instantly get a 20% discount Coupon on GeeksforGeeks when you register.</li></ul>",
     startDate: "2024-11-19T18:00:00",
     endDate: "2024-11-19T20:00:00",
     venue: "Room 1001",
-    status: "upcoming",
-    registrationLink:
-      "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university",
+    status: "ended",
+    // registrationLink:
+    // "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university",
     // resourcesLink:
     // "https://plakshauniversity1-my.sharepoint.com/...your_shared_resource_link...",
     speakers: [
@@ -34,7 +34,7 @@ const staticEventsData = [
     thumbnail: "/images/events/gear-up/poster1.png",
     coverPhoto: "/images/events/gear-up/cover1.png",
     description:
-      "<p>Welcome to the <strong>Gear Up</strong> event! This experience invites you to dive into the world of robotics and unleash your creativity. Attendees will enjoy an exciting robotics exhibition featuring robotic arms, drones, and underwater robots, along with a hands-on competition where teams can build and race their own robots. With exciting prizes up for grabs, this event promises innovation, teamwork, and fun. Don’t miss the opportunity to explore the future of robotics with like-minded enthusiasts!</p>",
+      "This event invites you to dive into the world of robotics and unleash your creativity. Attendees will enjoy an exciting robotics exhibition featuring robotic arms, drones, and underwater robots, along with a hands-on competition where teams can build and race their own robots. <br></br> With an exciting cash prize of <strong>₹1,000</strong>, this event promises innovation, teamwork, and fun. Don’t miss the opportunity to explore the future of robotics with like-minded enthusiasts!</p>",
     startDate: "2024-11-14T17:30:00",
     endDate: "2024-11-14T20:00:00",
     venue: "Room 1001",

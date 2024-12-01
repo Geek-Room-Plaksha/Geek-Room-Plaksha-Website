@@ -32,7 +32,7 @@ export const GradientBall = styled.div`
         return `
         background: linear-gradient(
           90deg,
-          ${theme.colors.brandYellow} 1%,
+          ${theme.colors.brandGreen} 1%,
           rgba(255, 255, 255, 0) 100%
         );
       `;
@@ -54,8 +54,11 @@ export const GradientBall = styled.div`
       `;
       case 4:
         return `
-        background: rgb(66,133,244);
-        background: radial-gradient(circle, rgba(66,133,244,1) 0%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(
+          90deg,
+          ${theme.colors.brandRed} 1%,
+          rgba(255, 255, 255, 0) 100%
+        );
       `;
       default:
         return "";

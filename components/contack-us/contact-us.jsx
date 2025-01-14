@@ -3,12 +3,13 @@ import { Mail } from "lucide-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    fullName: "",
+    name: "",
     email: "",
     message: ""
   });
 
   const [isMobile, setIsMobile] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -20,9 +21,32 @@ const ContactForm = () => {
     return () => window.removeEventListener("resize", checkIsMobile);
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    try {
+      const res = await fetch(
+        "https://website-api-mw57.onrender.com/api/contact-us",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(formData)
+        }
+      );
+      if (res.ok) {
+        setResponseMessage("Your message has been sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          message: ""
+        });
+      } else {
+        setResponseMessage("There was an error sending your message.");
+      }
+    } catch (error) {
+      setResponseMessage("There was an error sending your message.");
+    }
   };
 
   const handleChange = (e) => {
@@ -75,9 +99,9 @@ const ContactForm = () => {
             <div>
               <input
                 type="text"
-                name="fullName"
+                name="name"
                 placeholder="Full Name"
-                value={formData.fullName}
+                value={formData.name}
                 onChange={handleChange}
                 className="w-full p-3 border-solid border-[#00acb2] text-white rounded focus:outline-none focus:ring-2 focus:ring-[#00acb2] bg-transparent"
                 required
@@ -114,6 +138,9 @@ const ContactForm = () => {
             >
               Send Message
             </button>
+            {responseMessage && (
+              <p className="text-white mt-4">{responseMessage}</p>
+            )}
           </form>
         </div>
       </div>

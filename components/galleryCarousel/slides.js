@@ -86,6 +86,20 @@ const slides = [
     )
   },
   {
+    key: "slide-11",
+    content: (
+      <GallerySlide
+        galleryImageData={{
+          event: {
+            title: "Code Clash",
+            id: "1"
+          },
+          url: "/images/slides/11.png"
+        }}
+      />
+    )
+  },
+  {
     key: "slide-4",
     content: (
       <GallerySlide
@@ -123,6 +137,20 @@ const slides = [
             id: "1"
           },
           url: "/images/slides/7.jpg"
+        }}
+      />
+    )
+  },
+  {
+    key: "slide-10",
+    content: (
+      <GallerySlide
+        galleryImageData={{
+          event: {
+            title: "Code Clash",
+            id: "1"
+          },
+          url: "/images/slides/10.png"
         }}
       />
     )

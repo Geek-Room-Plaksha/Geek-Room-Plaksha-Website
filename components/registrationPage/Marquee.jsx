@@ -18,10 +18,12 @@ const reviews = [
   { img: "/images/join-us/15.png" },
   { img: "/images/join-us/18.png" },
   { img: "/images/join-us/3.jpg" },
+  { img: "/images/slides/10.png" },
   { img: "/images/join-us/4.jpg" },
   { img: "/images/join-us/19.png" },
   { img: "/images/join-us/20.png" },
-  { img: "/images/join-us/6.png" }
+  { img: "/images/join-us/6.png" },
+  { img: "/images/slides/11.png" }
 ];
 
 const ReviewCard = ({ img }) => {

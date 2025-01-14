@@ -27,8 +27,7 @@ const RegistrationPage = () => {
           What are you waiting for?
         </Typography>
         <Typography variant="body" className="descriptionText">
-          {`If you're excited to learn and collaborate, don't wait.
-          Apply now and embark on a journey of growth and opportunities!`}
+          {`If you're eager to learn, collaborate, and grow, don't wait—apply now to join Geek Room Plaksha and embark on an exciting journey of opportunities!`}
         </Typography>
       </TitleContainer>
       <MarqueeDemo></MarqueeDemo>

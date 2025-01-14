@@ -4,7 +4,8 @@ import {
   LeadContainer,
   TeamContainer,
   TeamMembersWrapper,
-  TeamPageContainer
+  TeamPageContainer,
+  CoreMembersWrapper
 } from "./TeamPage.styled";
 import Typography from "../display/typography/Typography";
 import { useTheme } from "styled-components";
@@ -37,7 +38,7 @@ const TeamPage = ({ teamData }) => {
     <TeamPageContainer>
       <TeamContainer>
         <Typography variant="h2">Core Team</Typography>
-        <TeamMembersWrapper>
+        <CoreMembersWrapper>
           {teamData.core.map((member, index) => (
             <MemberCard
               key={member.id}
@@ -47,7 +48,7 @@ const TeamPage = ({ teamData }) => {
               avatarSize={isMobile ? "lg" : "xl"}
             />
           ))}
-        </TeamMembersWrapper>
+        </CoreMembersWrapper>
       </TeamContainer>
       <TeamContainer>
         <Typography variant="h2">Members</Typography>

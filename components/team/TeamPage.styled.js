@@ -44,3 +44,15 @@ export const TeamMembersWrapper = styled.div`
     justify-content: center;
   }
 `;
+export const CoreMembersWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  @media screen and (${devices.xl}) {
+    align-items: center;
+    justify-content: center;
+  }
+`;

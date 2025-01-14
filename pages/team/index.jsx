@@ -1,5 +1,5 @@
 import Head from "next/head";
-import TeamPage from "../../components/team/TeamPage"; // Adjust the import path as necessary
+import TeamPage from "../../components/team/TeamPage";
 
 const teamData = {
   name: "Geek Room Plaksha Team",
@@ -33,6 +33,15 @@ const teamData = {
       role: "Tech Lead"
     },
     {
+      id: 9,
+      profile: {
+        name: "Nikunj Agarwal",
+        profileLink: "https://www.linkedin.com/in/nikunj-agarwal-2b388b288/",
+        image: "/images/team/nikunj.png"
+      },
+      role: "Robotics Lead"
+    },
+    {
       id: 5,
       profile: {
         name: "Manavi Nakra",
@@ -50,25 +59,6 @@ const teamData = {
         image: "/images/team/trinav.jpg"
       },
       role: "Content Lead"
-    },
-    {
-      id: 9,
-      profile: {
-        name: "Nikunj Agarwal",
-        profileLink: "https://www.linkedin.com/in/nikunj-agarwal-2b388b288/",
-        image: "/images/team/nikunj.png"
-      },
-      role: "Robotics Lead"
-    },
-    {
-      id: 8,
-      profile: {
-        name: "Mudasir Rasheed",
-        profileLink:
-          "https://x.com/MudasirRasheed_?t=CzMYPmtNaLTXNxs2WLJ3Bg&s=09",
-        image: "/images/team/mudasir.jpg"
-      },
-      role: "Event Management Lead"
     }
   ],
 
@@ -226,15 +216,6 @@ const teamData = {
         profileLink:
           "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
         image: "/images/team/armaan.png"
-      },
-      role: "Tech"
-    },
-    {
-      id: 24,
-      profile: {
-        name: "Soumya Pandey",
-        profileLink: "https://www.linkedin.com/in/soumya-pandey-89825323b/",
-        image: "/images/team/soumya.jpg"
       },
       role: "Tech"
     },

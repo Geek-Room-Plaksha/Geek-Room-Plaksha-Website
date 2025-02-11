@@ -1,9 +1,51 @@
 const staticEventsData = [
   {
+    slug: "kotlin",
+    title: "Kotlin Workshop",
+    shortDescription:
+      "Kickstart your app development journey with Geek Room Plaksha's Kotlin Workshop! This hands-on event will introduce you to Kotlin, enabling you to create your very own mobile app.",
+    thumbnail: "/images/events/kotlin/poster.png",
+    coverPhoto: "/images/events/kotlin/cover.png",
+    description:
+      "<p>Kickstart your app development journey with Geek Room Plaksha's Kotlin Workshop! This two-day hands-on event will introduce you to Kotlin programming and Android basics, enabling you to create your very own mobile app.</p> <p><strong>Highlights:</strong></p> <ul> <li>📚 Learn Kotlin and Android development basics from scratch.</li> <li>📱 Build a functional app to add to your resume.</li> <li>💡 Gain valuable insights into mobile app development workflows.</li> <li>🎓 Perfect for beginners looking to dive into app development.</li> </ul>",
+    startDate: "2025-01-28T18:00:00",
+    endDate: "2025-01-29T20:00:00",
+    venue: "Room 1002",
+    status: "ended",
+    // registrationLink:
+    // "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university",
+    resourcesLink:
+      "https://drive.google.com/drive/folders/1-rXXMUQl64datzVighQgSrtDwRTUDe0t?usp=sharing",
+    speakers: [
+      {
+        id: 1,
+        name: "Abhijeet Shashwat",
+        profileLink: "https://www.linkedin.com/in/asp616848/",
+        image: "/images/team/abhi.jpg",
+        title: "Instructor"
+      },
+      {
+        id: 2,
+        name: "Maan Kumawat",
+        profileLink: "#",
+        image: "/images/team/maan.png",
+        title: "Teaching Assistant"
+      },
+      {
+        id: 3,
+        name: "Armaan Raisinghani",
+        profileLink:
+          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
+        image: "/images/team/armaan.png",
+        title: "Teaching Assistant"
+      }
+    ]
+  },
+  {
     slug: "Code-Clash",
     title: "Code Clash",
     shortDescription:
-      "An exciting coding event hosted by Geek Room Plaksha in collaboration with GeeksforGeeks and a prize pool of ₹8,000.",
+      "An exciting coding event hosted by Geek Room Plaksha in collaboration with GeeksforGeeks and a prize pool of ₹8,500.",
     thumbnail: "/images/events/code-clash/poster.jpg",
     coverPhoto: "/images/events/code-clash/cover1.png",
     description:

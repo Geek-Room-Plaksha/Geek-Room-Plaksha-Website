@@ -42,15 +42,6 @@ const teamData = {
       role: "Robotics Lead"
     },
     {
-      id: 5,
-      profile: {
-        name: "Manavi Nakra",
-        profileLink: "#",
-        image: "/images/team/manavi.jpg"
-      },
-      role: "Marketing & Design Lead"
-    },
-    {
       id: 6,
       profile: {
         name: "Trinav Talukdar",
@@ -59,38 +50,19 @@ const teamData = {
         image: "/images/team/trinav.jpg"
       },
       role: "Content Lead"
+    },
+    {
+      id: 5,
+      profile: {
+        name: "Manavi Nakra",
+        profileLink: "#",
+        image: "/images/team/manavi.jpg"
+      },
+      role: "Marketing & Design Lead"
     }
   ],
 
   members: [
-    {
-      id: 3,
-      profile: {
-        name: "Christopher George",
-        profileLink:
-          "https://www.linkedin.com/in/christopher-george-13077a216/",
-        image: "/images/team/Christopher.jpg"
-      },
-      role: "Tech"
-    },
-    {
-      id: 7,
-      profile: {
-        name: "Suraj Dayma",
-        profileLink: "https://www.linkedin.com/in/surajdayma/",
-        image: "/images/team/Suraj.jpg"
-      },
-      role: "Content"
-    },
-    {
-      id: 9,
-      profile: {
-        name: "Niksh Hiremath",
-        profileLink: "https://www.linkedin.com/in/nikshhiremath",
-        image: "/images/team/niksh.png"
-      },
-      role: "Tech"
-    },
     {
       id: 10,
       profile: {
@@ -137,15 +109,6 @@ const teamData = {
       role: "Research"
     },
     {
-      id: 15,
-      profile: {
-        name: "Eshan Srirambhatla",
-        profileLink: "https://www.linkedin.com/in/eshan-srirambhatla-a618ba210",
-        image: "/images/team/eshan.png"
-      },
-      role: "Tech"
-    },
-    {
       id: 16,
       profile: {
         name: "Maan Kumawat",
@@ -162,24 +125,6 @@ const teamData = {
         image: "/images/team/arsh.png"
       },
       role: "Robotics"
-    },
-    {
-      id: 18,
-      profile: {
-        name: "Avantika Bansal",
-        profileLink: "https://www.linkedin.com/in/avantika-bansal-9253b3278",
-        image: "/images/team/avantika.png"
-      },
-      role: "Marketing & Design"
-    },
-    {
-      id: 19,
-      profile: {
-        name: "Tisha Bhavsar",
-        profileLink: "#",
-        image: "/images/team/tisha.png"
-      },
-      role: "Tech"
     },
     {
       id: 20,
@@ -218,34 +163,6 @@ const teamData = {
         image: "/images/team/armaan.png"
       },
       role: "Tech"
-    },
-    {
-      id: 25,
-      profile: {
-        name: "Rishaan Damani",
-        profileLink: "#",
-        image: "/images/team/rishaan.png"
-      },
-      role: "Tech"
-    },
-    {
-      id: 26,
-      profile: {
-        name: "Dhruv Pande",
-        profileLink:
-          "https://www.linkedin.com/in/dhruv-pande-9a730b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "/images/team/dhruv.jpg"
-      },
-      role: "Marketing & Design"
-    },
-    {
-      id: 27,
-      profile: {
-        name: "Ronak Tiwari",
-        profileLink: "https://www.linkedin.com/in/ronak-tiwari-67b522255/",
-        image: "/images/team/ronak.png"
-      },
-      role: "Robotics"
     },
     {
       id: 26,

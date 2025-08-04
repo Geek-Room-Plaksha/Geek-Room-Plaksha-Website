@@ -52,6 +52,16 @@ const teamData = {
       role: "Content Lead"
     },
     {
+      id: 23,
+      profile: {
+        name: "Armaan Raisinghani",
+        profileLink:
+          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
+        image: "/images/team/armaan.png"
+      },
+      role: "Tech Lead"
+    },
+    {
       id: 5,
       profile: {
         name: "Manavi Nakra",
@@ -61,7 +71,9 @@ const teamData = {
       role: "Marketing & Design Lead"
     }
   ],
-
+  poc:[
+    
+  ],
   members: [
     {
       id: 10,
@@ -106,7 +118,7 @@ const teamData = {
         profileLink: "https://www.linkedin.com/in/divyannsh-pincha-9a9862240",
         image: "/images/team/divyannsh.png"
       },
-      role: "Research"
+      role: "Tech"
     },
     {
       id: 16,
@@ -134,7 +146,7 @@ const teamData = {
           "https://www.instagram.com/sahil.gada__/profilecard/?igsh=MXhocWFxcTJ0czhuNg==",
         image: "/images/team/sahil.png"
       },
-      role: "Research"
+      role: "Marketing & Design"
     },
     {
       id: 21,
@@ -153,16 +165,6 @@ const teamData = {
         image: "/images/team/kuhuk.png"
       },
       role: "Content"
-    },
-    {
-      id: 23,
-      profile: {
-        name: "Armaan Raisinghani",
-        profileLink:
-          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
-        image: "/images/team/armaan.png"
-      },
-      role: "Tech"
     },
     {
       id: 26,

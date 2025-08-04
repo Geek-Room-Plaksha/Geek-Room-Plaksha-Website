@@ -48,7 +48,11 @@ export const CoreMembersWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  
+  justify-content: center;
+  gap: 2em;
+
   align-items: flex-start;
   flex-wrap: wrap;
   @media screen and (${devices.xl}) {

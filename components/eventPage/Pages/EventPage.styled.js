@@ -181,7 +181,9 @@ export const SpeakerCard = styled.div`
   padding: 2em;
   gap: 1em;
   box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.16);
-  cursor: url("/cursors/cursor-pointer.svg") 10 0, auto;
+  cursor:
+    url("/cursors/cursor-pointer.svg") 10 0,
+    auto;
   transition: all 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0.2);
 
@@ -234,8 +236,8 @@ export const InfoModal = styled.div`
       status === "ended" || status === "closed"
         ? theme.colors.brandRed
         : status === "upcoming" || status === "open"
-        ? theme.colors.brandGreen
-        : theme.colors.brandBlue};
+          ? theme.colors.brandGreen
+          : theme.colors.brandBlue};
 
   @media screen and (${devices.lg}) {
     width: 100%;
@@ -266,41 +268,16 @@ export const Button = styled.button`
   font-weight: 500;
   font-size: 1.5rem;
   color: white;
-  background-color: ${({ theme }) => theme.colors.brandBlue};
+  background-color: ${({ theme }) => theme.colors.brandRed};
   letter-spacing: 1px;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
 
   &:hover {
-    box-shadow: 0 0 0 5px #3b83f65f;
+    box-shadow: 0 0 0 5px rgba(241, 91, 34, 0.3);
   }
 
   @media screen and (${devices.md}) {
     font-size: 1.2rem;
   }
-`;
-
-export const EventTagsContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-`;
-
-export const EventTag = styled.div`
-  border: 1px solid ${({ theme }) => theme.colors.contentSecondary};
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.bgPrimary};
-    box-shadow: 0 0 0 2px #3b83f65f;
-    border-color: #3b83f65f;
-  }
-`;
-
-export const HorizontalLine = styled.hr`
-  width: 100%;
-  border: 1px solid #cdcdcd5f;
 `;

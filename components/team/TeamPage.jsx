@@ -37,7 +37,7 @@ const TeamPage = ({ teamData }) => {
   return (
     <TeamPageContainer>
       <TeamContainer>
-        <Typography variant="h2">Core Team</Typography>
+        <Typography variant="h2">Core</Typography>
         <CoreMembersWrapper>
           {teamData.core.map((member, index) => (
             <MemberCard
@@ -53,6 +53,14 @@ const TeamPage = ({ teamData }) => {
       <TeamContainer>
         <Typography variant="h2">Members</Typography>
         <TeamMembersWrapper>
+        {teamData.poc.map((member, index) => (
+            <MemberCard
+              key={member.id}
+              member={member}
+              avatarBorderColor="#f15b22"
+              avatarSize={isMobile ? "lg" : "xl"}
+            />
+          ))}
           {teamData.members.map((member, index) => (
             <MemberCard
               key={member.id}

@@ -1,5 +1,115 @@
 const staticEventsData = [
   {
+    slug: "hack-summit",
+    title: "Hack Summit",
+    isHack: true,
+    shortDescription:
+      "Hosted by E-Cell Plaksha X Geek Room Plaksha, Hack Summit is a 24-hour in-person hackathon that is part of the prestigious E-Summit 'aeternum'.",
+    thumbnail: "/images/events/Hack-Summit/Poster.png",
+    coverPhoto: "/images/events/Hack-Summit/banner.png",
+    description:
+      "<p>Hosted by E-Cell Plaksha X Geek Room Plaksha, Hack Summit is a 24-hour in-person hackathon that is part of the prestigious E-Summit 'aeternum'. This event brings together talented developers, designers, and problem-solvers from universities across the country to showcase their skills in an intense coding marathon.</p> <p><strong>Why Join? 💡</strong></p> <ul> <li>💰 ₹1,00,000 cash prize pool</li> <li>✨ 6-month Perplexity Pro subscription ($120 each) for all participants</li> <li>🏢 Incubation opportunities at IIT Ropar</li> <li>🎁 Exciting goodies</li> </ul> <p>Don't miss this chance to innovate, collaborate, and win big! 🔥✨</p>",
+    startDate: "2025-03-30T14:00:00",
+    endDate: "2025-03-31T18:00:00",
+    venue: "Room 1001, Plaksha University",
+    status: "ended",
+    registrationLink:
+      "https://unstop.com/hackathons/hack-summit-aeternum-e-summit25-by-e-cell-plaksha-university-plaksha-university-punjab-1422233",
+    speakers: [
+      {
+        id: 1,
+        name: "Perplexity AI",
+        profileLink: "https://www.perplexity.ai/",
+        image: "/images/events/Hack-Summit/perplexity.png",
+        title: ""
+      },
+      {
+        id: 2,
+        name: "IIT Ropar",
+        profileLink: "https://www.iitrpr.ac.in/",
+        image: "/images/events/Hack-Summit/iit.png",
+        title: ""
+      },
+      {
+        id: 3,
+        name: ".xyz",
+        profileLink: "https://gen.xyz/",
+        image: "/images/events/Hack-Summit/xyz.png",
+        title: ""
+      },
+      {
+        id: 5,
+        name: "ETHIndia",
+        profileLink: "https://ethindia2024.devfolio.co/",
+        image: "/images/events/Hack-Summit/eth.png",
+        title: ""
+      },
+      {
+        id: 5,
+        name: "Unstop",
+        profileLink: "https://unstop.com/",
+        image: "/images/events/Hack-Summit/unstop.jpg",
+        title: ""
+      },
+      {
+        id: 4,
+        name: "CodeCrafters",
+        profileLink: "https://codecrafters.io/",
+        image: "/images/events/Hack-Summit/cc.png",
+        title: ""
+      },
+      {
+        id: 5,
+        name: "Devfolio",
+        profileLink: "https://devfolio.co/discover",
+        image: "/images/events/Hack-Summit/devfolio.webp",
+        title: ""
+      }
+    ]
+  },
+  {
+    slug: "fastapi",
+    title: "FastAPI Workshop",
+    shortDescription:
+      "Master the fundamentals of backend development with GeekRoom Plaksha's FastAPI Workshop! This hands-on session will introduce you to Python, RESTful APIs, and how to build and integrate your own backend services.",
+    thumbnail: "/images/events/fastapi/poster.png",
+    coverPhoto: "/images/events/fastapi/cover.png",
+    description:
+      "<p>Master the fundamentals of backend development with GeekRoom Plaksha's FastAPI Workshop! This hands-on session will introduce you to Python, RESTful APIs, and how to build and integrate your own backend services.</p> <p><strong>Highlights:</strong></p>  <ul>   <li>🐍 Explore the power of <strong>Python</strong> and FastAPI for backend development.</li>   <li>📚 Learn how APIs work and their role in modern applications.</li>   <li>🛠️ Build and deploy your first API in a hands-on session.</li>   <li>💡 Gain insights into integrating APIs with frontend and mobile applications.</li>  <li>🚀 Perfect for beginners looking to dive into backend development.</li>  </ul>",
+    startDate: "2025-03-26T18:00:00",
+    endDate: "2025-03-26T20:00:00",
+    venue: "Room 1002",
+    status: "ended",
+    // registrationLink:
+    // "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university",
+    resourcesLink:
+      "https://drive.google.com/drive/folders/1De84hh7lT2Fu0rSr_IezR2sZsC1zwBO5?usp=sharing",
+    speakers: [
+      {
+        id: 1,
+        name: "Shreya Khanna",
+        profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
+        image: "/images/team/shreya.png",
+        title: "Instructor"
+      },
+      {
+        id: 2,
+        name: "Armaan Raisinghani",
+        profileLink:
+          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
+        image: "/images/team/armaan.png",
+        title: "Instructor"
+      },
+      {
+        id: 3,
+        name: "Vir Dang",
+        profileLink: "https://www.linkedin.com/in/vir-dang-5573782b1",
+        image: "/images/team/vir.png",
+        title: "Instructor"
+      }
+    ]
+  },
+  {
     slug: "kotlin",
     title: "Kotlin Workshop",
     shortDescription:
@@ -26,13 +136,20 @@ const staticEventsData = [
       },
       {
         id: 2,
+        name: "Akshat Gupta",
+        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
+        image: "/images/team/Akshat.png",
+        title: "Teaching Assistant"
+      },
+      {
+        id: 3,
         name: "Maan Kumawat",
         profileLink: "#",
         image: "/images/team/maan.png",
         title: "Teaching Assistant"
       },
       {
-        id: 3,
+        id: 4,
         name: "Armaan Raisinghani",
         profileLink:
           "https://www.linkedin.com/in/armaan-raisinghani-362654240/",

@@ -1,6 +1,44 @@
 const blogData = {
   newsletters: [
     {
+      "title": "03",
+      "slug": "newsletters",
+      "thumbnail": "/images/media/newsletters/03.png",
+      "shortDescription":
+        "Explore DeepSeek's AI breakthrough, ISRO's 100th launch, AI-driven crowd management at Kumbh Mela, and nature-inspired robotic wings.",
+      "tags": [
+        { "label": "Technology" },
+        { "label": "AI" },
+        { "label": "Space" },
+        { "label": "Innovation" },
+        { "label": "Science" }
+      ],
+      "authors": [
+        {
+          "username": "Trinav",
+          "name": "Trinav",
+          "image": "/images/team/trinav.jpg"
+        },
+        {
+          "username": "Proshita",
+          "name": "Proshita",
+          "image": "/images/team/proshita.png"
+        },
+        {
+          "username": "Shreya",
+          "name": "Shreya",
+          "image": "/images/team/shreya.png"
+        },
+        {
+          "username": "Kuhuk",
+          "name": "Kuhuk",
+          "image": "/images/team/kuhuk.png"
+        }
+      ],
+      "date": "2025-01-29T00:00:00Z",
+      "link": "https://www.instagram.com/p/DFp2KiuS4hY/?img_index=1"
+    },    
+    {
       title: "02",
       slug: "newsletters",
       thumbnail: "/images/media/newsletters/02.png",

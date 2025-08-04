@@ -11,6 +11,11 @@ const partners = [
     id: 2,
     name: "FitoorxPrayas",
     logo: "images/Collaboration/fxp.png"
+  },
+  {
+    id: 3,
+    name: "E-Cell Plaksha",
+    logo: "images/Collaboration/ecel.png"
   }
 ];
 

@@ -24,16 +24,13 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(
-        "https://website-api-mw57.onrender.com/api/contact-us",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(formData)
-        }
-      );
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact-us`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
       if (res.ok) {
         setResponseMessage("Your message has been sent successfully!");
         setFormData({

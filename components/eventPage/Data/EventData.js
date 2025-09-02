@@ -1,5 +1,38 @@
 const staticEventsData = [
   {
+    slug: "Git-Github-2.0",
+    title: "Git Github",
+    shortDescription:
+      "An absolutely beginner-friendly workshop to get you started with version control and open source. No prior experience needed! ",
+    thumbnail: "/images/events/git2/poster.png",
+    coverPhoto: "/images/events/git2/cover.png",
+    description:
+      "<p>An exciting workshop to get you started with version control and open source.</p> <p><strong>What’s in store? 🚀</strong></p> <ul> <li>💫 Introduction to Version Control Systems</li> <li>💫 Make your first GitHub repository</li> <li>💫 Learn about Open Source programs like GSoC</li> <li>💫 Hands-on setup with VS Code</li> </ul> <p>No prior experience needed — this is absolutely beginner-friendly! Just bring your laptop and get ready to dive into Git & GitHub. 🔥</p>",
+    startDate: "2025-09-03T17:30:00",
+    endDate: "2025-09-03T20:00:00",
+    venue: "Room 1002",
+    status: "ended",
+    registrationLink:
+      "https://unstop.com/hackathons/hack-summit-aeternum-e-summit25-by-e-cell-plaksha-university-plaksha-university-punjab-1422233",
+    speakers: [
+      {
+        id: 1,
+        name: "Armaan Raisinghani",
+        profileLink:
+          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
+        image: "/images/team/armaan.png",
+        title: "Instructor"
+      },
+      {
+        id: 2,
+        name: "Shreya Khanna",
+        profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
+        image: "/images/team/shreya.png",
+        title: "Teaching Assistant"
+      },
+    ]
+  },
+  {
     slug: "hack-summit",
     title: "Hack Summit",
     isHack: true,

@@ -14,6 +14,7 @@ import MessageSvg from "@icons/messageprogramming.svg";
 import ContentSvg from "@icons/content.svg";
 import RobotSvg from "@icons/robot.svg";
 import EventsSvg from "@icons/events.svg";
+import PaletteSvg from "@icons/events.svg";
 
 function OfferSection() {
   return (
@@ -44,7 +45,7 @@ function OfferSection() {
           <OfferLogo
             bgcolor={["#0F9D58", "#64D8CB"]}
             rgb="100, 216, 203"
-            delay={800}
+            delay={200}
           >
             <EventsSvg />
           </OfferLogo>
@@ -63,15 +64,16 @@ function OfferSection() {
           <OfferLogo
             bgcolor={["#FF5722", "#FF8A65"]}
             rgb="255, 138, 101"
-            delay={600}
+            delay={400}
           >
-            <RobotSvg />
+            <MessageSvg />
           </OfferLogo>
           <OfferInfo>
-            <Typography variant="h3">Robotics</Typography>
+            <Typography variant="h3">Marketing</Typography>
             <Typography variant="bodySmall">
-              The Robotics team empowers members to design, build, and program
-              robots through engaging projects and interactive workshops.
+              The Marketing team creates compelling campaigns and promotions,
+              ensuring our message reaches and resonates with a wide audience
+              across campus and beyond.
             </Typography>
           </OfferInfo>
         </OfferCard>
@@ -80,7 +82,25 @@ function OfferSection() {
           <OfferLogo
             bgcolor={["#0F9D58", "#64D8CB"]}
             rgb="100, 216, 203"
-            delay={200}
+            delay={600}
+          >
+            <PaletteSvg />
+          </OfferLogo>
+          <OfferInfo>
+            <Typography variant="h3">Design</Typography>
+            <Typography variant="bodySmall">
+              The Design team crafts visually stunning graphics, interfaces, and
+              branding materials that communicate our vision effectively and
+              create a consistent visual identity for Geek Room.
+            </Typography>
+          </OfferInfo>
+        </OfferCard>
+
+        <OfferCard>
+          <OfferLogo
+            bgcolor={["#FF5722", "#FF8A65"]}
+            rgb="255, 138, 101"
+            delay={800}
           >
             <ContentSvg />
           </OfferLogo>
@@ -96,36 +116,18 @@ function OfferSection() {
 
         <OfferCard>
           <OfferLogo
-            bgcolor={["#FF5722", "#FF8A65"]}
-            rgb="255, 138, 101"
-            delay={400}
-          >
-            <MessageSvg />
-          </OfferLogo>
-          <OfferInfo>
-            <Typography variant="h3">Marketing and Design</Typography>
-            <Typography variant="bodySmall">
-              The Marketing & Design team creates visually compelling campaigns,
-              promotes our initiatives, and ensures our message resonates with a
-              wide audience.
-            </Typography>
-          </OfferInfo>
-        </OfferCard>
-
-        <OfferCard>
-          <OfferLogo
             bgcolor={["#0F9D58", "#64D8CB"]}
             rgb="100, 216, 203"
-            delay={800}
+            delay={1000}
           >
             <BookSvg />
           </OfferLogo>
           <OfferInfo>
-            <Typography variant="h3">Research</Typography>
+            <Typography variant="h3">Outreach</Typography>
             <Typography variant="bodySmall">
-              The Research team promotes a strong research culture at Plaksha,
-              offering a space for students to learn research methodologies and
-              conduct meaningful studies.
+              The Outreach team builds strategic partnerships with industry,
+              academic institutions, and other student groups to expand our
+              network and create opportunities for collaboration and growth.
             </Typography>
           </OfferInfo>
         </OfferCard>

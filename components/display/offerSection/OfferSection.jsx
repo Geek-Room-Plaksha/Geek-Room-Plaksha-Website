@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from "../typography/Typography";
+import Image from "next/image";
 import {
   Container,
   OfferCard,
@@ -8,13 +9,6 @@ import {
   OffersContainer,
   Title
 } from "./OfferSection.styled";
-import BookSvg from "@icons/book1.svg";
-import CubeSvg from "@icons/i3dcubescan.svg";
-import MessageSvg from "@icons/messageprogramming.svg";
-import ContentSvg from "@icons/content.svg";
-import RobotSvg from "@icons/robot.svg";
-import EventsSvg from "@icons/events.svg";
-import PaletteSvg from "@icons/events.svg";
 
 function OfferSection() {
   return (
@@ -29,7 +23,12 @@ function OfferSection() {
             rgb="255, 138, 101"
             delay={0}
           >
-            <CubeSvg />
+            <Image
+              src="/icons/tech.svg"
+              alt="Tech icon"
+              width={50}
+              height={50}
+            />
           </OfferLogo>
           <OfferInfo>
             <Typography variant="h3">Tech</Typography>
@@ -47,7 +46,12 @@ function OfferSection() {
             rgb="100, 216, 203"
             delay={200}
           >
-            <EventsSvg />
+            <Image
+              src="/icons/events.svg"
+              alt="Events icon"
+              width={50}
+              height={50}
+            />
           </OfferLogo>
           <OfferInfo>
             <Typography variant="h3">Events</Typography>
@@ -66,7 +70,12 @@ function OfferSection() {
             rgb="255, 138, 101"
             delay={400}
           >
-            <MessageSvg />
+            <Image
+              src="/icons/market.svg"
+              alt="Marketing icon"
+              width={60}
+              height={60}
+            />
           </OfferLogo>
           <OfferInfo>
             <Typography variant="h3">Marketing</Typography>
@@ -84,7 +93,12 @@ function OfferSection() {
             rgb="100, 216, 203"
             delay={600}
           >
-            <PaletteSvg />
+            <Image
+              src="/icons/design.svg"
+              alt="Design icon"
+              width={50}
+              height={50}
+            />
           </OfferLogo>
           <OfferInfo>
             <Typography variant="h3">Design</Typography>
@@ -102,7 +116,12 @@ function OfferSection() {
             rgb="255, 138, 101"
             delay={800}
           >
-            <ContentSvg />
+            <Image
+              src="/icons/content.svg"
+              alt="Content icon"
+              width={40}
+              height={40}
+            />
           </OfferLogo>
           <OfferInfo>
             <Typography variant="h3">Content</Typography>
@@ -120,7 +139,12 @@ function OfferSection() {
             rgb="100, 216, 203"
             delay={1000}
           >
-            <BookSvg />
+            <Image
+              src="/icons/collaboration.svg"
+              alt="Outreach icon"
+              width={65}
+              height={65}
+            />
           </OfferLogo>
           <OfferInfo>
             <Typography variant="h3">Outreach</Typography>

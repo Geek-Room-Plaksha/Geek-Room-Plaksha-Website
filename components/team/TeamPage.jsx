@@ -80,7 +80,7 @@ const TeamPage = ({ teamData }) => {
               <MemberCard
                 key={member.id}
                 member={member}
-                avatarBorderColor="#7d3ac1"
+                avatarBorderColor="#bbbbbf"
                 avatarSize={isMobile ? "lg" : "xl"}
               />
             ))}

@@ -10,13 +10,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2em 8em;
+  justify-content: flex-start;
+  padding: 2em 4em;
   text-align: center;
-  gap: 20px;
+  gap: 40px;
 
   @media screen and (${devices.lg}) {
-    padding: 2em 1em;
+    padding: 2em 1.5em;
+    gap: 30px;
   }
 `;
 
@@ -85,12 +86,12 @@ export const Button = styled.button`
 export const TitleContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0.3em 2.8em;
+  padding: 0.3em 0;
+  margin-bottom: 20px;
 
   @media screen and (${devices.lg}) {
-    flex-direction: column;
     padding: 0.3em 0;
   }
 `;
@@ -187,4 +188,5 @@ export const AuthorInfo = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5em;
+  flex-wrap: wrap;
 `;

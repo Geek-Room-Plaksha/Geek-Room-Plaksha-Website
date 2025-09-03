@@ -6,28 +6,34 @@ import { ThreeDCardDemo } from "./3dCards/3Dproject";
 
 const projects = [
   {
-    title: "Project One",
-    description: "Description for project one.",
-    imageUrl: "/images/cs.png",
-    link: "/project-one",
+    title: "Plaksha Pang Pang",
+    description:
+      "Plaksha-themed mini-game (inspired by Suika) exclusively for UG29 batch Orientation.",
+    imageUrl: "/images/projects/pang.png",
+    link: "https://pangpang.geekroom-plaksha.tech/",
     authors: [
       {
-        username: "XYZ",
-        name: "XYZ",
-        image: "/images/avatar.png"
+        // name: "Armaan Raisinghani",
+        image: "/images/team/armaan.png"
+      },
+      {
+        image: "/images/team/shreya.png"
+      },
+      {
+        image: "/images/team/vir.png"
       }
     ]
   },
   {
-    title: "Project Two",
-    description: "Description for project two.",
-    imageUrl: "/images/cs.png",
-    link: "/project-two",
+    title: "Adventure",
+    description:
+      "An interactive game programmed in Python, using the Pygame library, showcased at the Founders’ Day.",
+    imageUrl: "/images/projects/adventure.png",
+    link: "/adventure",
     authors: [
       {
-        username: "XYZ",
-        name: "XYZ",
-        image: "/images/avatar.png"
+        // name: "Team Member",
+        image: "/images/team/arun.jpg"
       }
     ]
   }
@@ -41,18 +47,36 @@ function ProjectSection({ isMobile }) {
       <TitleContainer>
         <Typography variant="h1">Our Projects</Typography>
       </TitleContainer>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project, index) => (
+      <div
+        className={`w-full max-w-7xl mx-auto px-4 ${
+          projects.length === 1 ? "flex justify-center" : ""
+        }`}
+      >
+        {projects.length === 1 ? (
           <ThreeDCardDemo
-            key={index}
-            title={project.title}
-            description={project.description}
-            imageUrl={project.imageUrl}
-            link={project.link}
-            authors={project.authors} // Pass the authors prop
+            title={projects[0].title}
+            description={projects[0].description}
+            imageUrl={projects[0].imageUrl}
+            link={projects[0].link}
+            authors={projects[0].authors}
             isMobile={isMobile}
           />
-        ))}
+        ) : (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full">
+            {projects.map((project, index) => (
+              <div key={index} className="flex justify-center">
+                <ThreeDCardDemo
+                  title={project.title}
+                  description={project.description}
+                  imageUrl={project.imageUrl}
+                  link={project.link}
+                  authors={project.authors}
+                  isMobile={isMobile}
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </Container>
   );

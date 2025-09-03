@@ -67,13 +67,13 @@ function Intro({ isMobile }) {
     },
 
     {
-      label: "Competitions",
+      label: "Workshops",
       color: theme.colors.brandGreen,
       x: isMobile ? 150 : 200,
       y: 30
     },
     {
-      label: "Workshops",
+      label: "Hackathons",
       color: theme.colors.brandRed,
       x: isMobile ? 180 : 250,
       y: isMobile ? 260 : 280

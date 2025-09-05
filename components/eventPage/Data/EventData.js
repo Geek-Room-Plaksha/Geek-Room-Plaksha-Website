@@ -1,6 +1,6 @@
 const staticEventsData = [
   {
-    slug: "Git-Github-2.0",
+    slug: "git-github-2.0",
     title: "Git Github Workshop",
     shortDescription:
       "An absolutely beginner-friendly workshop to get you started with version control and open source. No prior experience needed! ",
@@ -14,6 +14,8 @@ const staticEventsData = [
     status: "ended",
     registrationLink:
       "https://unstop.com/hackathons/hack-summit-aeternum-e-summit25-by-e-cell-plaksha-university-plaksha-university-punjab-1422233",
+    resourcesLink:
+      "https://drive.google.com/file/d/1eu8H7eJ31Lf14dQq3HyTXwIoht39JWad/view?usp=sharing",
     speakers: [
       {
         id: 1,
@@ -28,7 +30,7 @@ const staticEventsData = [
         name: "Shreya Khanna",
         profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
         image: "/images/team/shreya.png",
-        title: "Teaching Assistant"
+        title: "Instructor"
       },
     ]
   },

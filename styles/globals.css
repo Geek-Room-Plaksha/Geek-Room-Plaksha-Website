@@ -67,3 +67,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom styling for the application form */
+.application-file-upload .grid-pattern-bg {
+  background-color: rgba(0, 172, 178, 0.1) !important; /* Matching the border color with transparency */
+}
+
+.application-file-upload p,
+.application-file-upload .upload-text {
+  color: #fff !important;
+}
+
+.application-file-upload .file-box {
+  background-color: rgba(0, 172, 178, 0.2) !important;
+  border: 1px dashed #00acb2 !important;
+}
+
+@media (max-width: 768px) {
+  .application-form-container {
+    padding: 16px;
+  }
+}

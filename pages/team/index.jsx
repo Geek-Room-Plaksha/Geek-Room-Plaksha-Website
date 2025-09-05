@@ -7,39 +7,50 @@ const teamData = {
     {
       id: 1,
       profile: {
-        name: "Akshat Gupta",
-        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png"
+        name: "Armaan Raisinghani",
+        profileLink:
+          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
+        image: "/images/team/armaan.png"
       },
       role: "President"
     },
     {
       id: 2,
       profile: {
-        name: "Raghav Sarna",
-        profileLink: "https://www.linkedin.com/in/raghav-sarna-4789bb2b3/",
-        image: "/images/team/raghav.jpg"
+        name: "Shreya Khanna",
+        profileLink:
+          "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
+        image: "/images/team/shreya.png"
       },
-      role: "Operations Lead"
+      role: "Head of Internal Affairs"
+    },
+    {
+      id: 3,
+      profile: {
+        name: "Divy Gupta",
+        profileLink:
+          "https://www.instagram.com/_divy_gupta_44?igsh=Nm5xN2s2bW9zbjg2&utm_source=qr",
+        image: "/images/team/divy.png"
+      },
+      role: "Head of External Affairs"
     },
     {
       id: 4,
       profile: {
-        name: "Arunachalam Vijayanand",
-        profileLink:
-          "https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/",
-        image: "/images/team/arun.jpg"
+        name: "Manavi Nakra",
+        profileLink: "#",
+        image: "/images/team/manavi.jpg"
       },
-      role: "Tech Lead"
+      role: "Head of Marketing"
     },
     {
-      id: 9,
+      id: 5,
       profile: {
-        name: "Nikunj Agarwal",
-        profileLink: "https://www.linkedin.com/in/nikunj-agarwal-2b388b288/",
-        image: "/images/team/nikunj.png"
+        name: "Maan Kumawat",
+        profileLink: "#",
+        image: "/images/team/maan.png"
       },
-      role: "Robotics Lead"
+      role: "Head of Design"
     },
     {
       id: 6,
@@ -49,26 +60,26 @@ const teamData = {
           "https://www.linkedin.com/in/trinav-prasad-talukdar-44b34428b/",
         image: "/images/team/trinav.jpg"
       },
-      role: "Content Lead"
+      role: "Head of Content"
     },
     {
-      id: 23,
+      id: 7,
       profile: {
-        name: "Armaan Raisinghani",
+        name: "Arunachalam Vijayanand",
         profileLink:
-          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
-        image: "/images/team/armaan.png"
+          "https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/",
+        image: "/images/team/arun.jpg"
       },
-      role: "Tech Lead"
+      role: "Head of Tech"
     },
     {
-      id: 5,
+      id: 8,
       profile: {
-        name: "Manavi Nakra",
-        profileLink: "#",
-        image: "/images/team/manavi.jpg"
+        name: "Akshat Gupta",
+        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
+        image: "/images/team/Akshat.png"
       },
-      role: "Marketing & Design Lead"
+      role: "Founding President (2024-25)"
     }
   ],
   poc:[
@@ -76,16 +87,7 @@ const teamData = {
   ],
   members: [
     {
-      id: 10,
-      profile: {
-        name: "Shreya Khanna",
-        profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
-        image: "/images/team/shreya.png"
-      },
-      role: "Content"
-    },
-    {
-      id: 11,
+      id: 1,
       profile: {
         name: "Proshita Agarwal",
         profileLink: "#",
@@ -94,25 +96,16 @@ const teamData = {
       role: "Content"
     },
     {
-      id: 12,
+      id: 2,
       profile: {
         name: "Harmannat Kaur",
         profileLink: "https://www.linkedin.com/in/harmannat-kaur-5516372b1",
         image: "/images/team/harmannat.png"
       },
-      role: "Marketing & Design"
+      role: "Marketing"
     },
     {
-      id: 13,
-      profile: {
-        name: "Abhijeet Shashwat",
-        profileLink: "https://www.linkedin.com/in/asp616848/",
-        image: "/images/team/abhi.jpg"
-      },
-      role: "Tech"
-    },
-    {
-      id: 14,
+      id: 3,
       profile: {
         name: "Divyannsh Pincha",
         profileLink: "https://www.linkedin.com/in/divyannsh-pincha-9a9862240",
@@ -121,35 +114,17 @@ const teamData = {
       role: "Tech"
     },
     {
-      id: 16,
-      profile: {
-        name: "Maan Kumawat",
-        profileLink: "#",
-        image: "/images/team/maan.png"
-      },
-      role: "Marketing & Design"
-    },
-    {
-      id: 17,
-      profile: {
-        name: "Arsh Arora",
-        profileLink: "https://www.linkedin.com/in/arsh-arora-6aa00232a/",
-        image: "/images/team/arsh.png"
-      },
-      role: "Robotics"
-    },
-    {
-      id: 20,
+      id: 4,
       profile: {
         name: "Sahil Gada",
         profileLink:
           "https://www.instagram.com/sahil.gada__/profilecard/?igsh=MXhocWFxcTJ0czhuNg==",
         image: "/images/team/sahil.png"
       },
-      role: "Marketing & Design"
+      role: "Marketing"
     },
     {
-      id: 21,
+      id: 5,
       profile: {
         name: "Vir Dang",
         profileLink: "https://www.linkedin.com/in/vir-dang-5573782b1",
@@ -158,7 +133,7 @@ const teamData = {
       role: "Tech"
     },
     {
-      id: 22,
+      id: 6,
       profile: {
         name: "Kuhuk Katiyar",
         profileLink: "https://www.linkedin.com/in/kuhuk-katiyar-72322b303",
@@ -166,17 +141,45 @@ const teamData = {
       },
       role: "Content"
     },
+  ],
+  alumni: [
     {
-      id: 26,
+      id: 1,
       profile: {
-        name: "Divy Gupta",
-        profileLink:
-          "https://www.instagram.com/_divy_gupta_44?igsh=Nm5xN2s2bW9zbjg2&utm_source=qr",
-        image: "/images/team/divy.png"
+        name: "Raghav Sarna",
+        profileLink: "https://www.linkedin.com/in/raghav-sarna-4789bb2b3/",
+        image: "/images/team/raghav.jpg"
       },
-      role: "Robotics"
+      role: "Founding Operations Lead (2024-25)"
+    },
+    {
+      id: 2,
+      profile: {
+        name: "Nikunj Agarwal",
+        profileLink: "https://www.linkedin.com/in/nikunj-agarwal-2b388b288/",
+        image: "/images/team/nikunj.png"
+      },
+      role: "Head of Robotics (2024-25)"
+    },
+    {
+      id: 3,
+      profile: {
+        name: "Abhijeet Shashwat",
+        profileLink: "https://www.linkedin.com/in/asp616848/",
+        image: "/images/team/abhi.jpg"
+      },
+      role: "Tech (2024-25)"
+    },
+    {
+      id: 4,
+      profile: {
+        name: "Arsh Arora",
+        profileLink: "https://www.linkedin.com/in/arsh-arora-6aa00232a/",
+        image: "/images/team/arsh.png"
+      },
+      role: "Design (2024-25)"
     }
-  ]
+  ],
 };
 
 teamData.members.sort((a, b) => a.profile.name.localeCompare(b.profile.name));

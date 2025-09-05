@@ -53,7 +53,7 @@ const TeamPage = ({ teamData }) => {
       <TeamContainer>
         <Typography variant="h2">Members</Typography>
         <TeamMembersWrapper>
-        {teamData.poc.map((member, index) => (
+          {teamData.poc.map((member, index) => (
             <MemberCard
               key={member.id}
               member={member}
@@ -71,6 +71,22 @@ const TeamPage = ({ teamData }) => {
           ))}
         </TeamMembersWrapper>
       </TeamContainer>
+
+      {teamData.alumni && teamData.alumni.length > 0 && (
+        <TeamContainer>
+          <Typography variant="h2">Alumni</Typography>
+          <TeamMembersWrapper>
+            {teamData.alumni.map((member, index) => (
+              <MemberCard
+                key={member.id}
+                member={member}
+                avatarBorderColor="#bbbbbf"
+                avatarSize={isMobile ? "lg" : "xl"}
+              />
+            ))}
+          </TeamMembersWrapper>
+        </TeamContainer>
+      )}
     </TeamPageContainer>
   );
 };

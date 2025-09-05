@@ -70,7 +70,7 @@ const Hero = ({ isMobile }) => {
   const heroAvatarElements = useMemo(
     () => [
       {
-        url: "/images/hero/Akshat.png",
+        url: "/images/team/armaan.png",
         borderColor: "#f15b22",
         id: "a1",
         x: 35,
@@ -78,7 +78,7 @@ const Hero = ({ isMobile }) => {
         delay: 0.9
       },
       {
-        url: "/images/hero/raghav.jpg",
+        url: "/images/team/shreya.png",
         borderColor: "#00acb2",
         id: "a2",
         x: 60,
@@ -86,7 +86,7 @@ const Hero = ({ isMobile }) => {
         delay: 1.5
       },
       {
-        url: "/images/team/trinav.jpg",
+        url: "/images/team/divy.png",
         borderColor: "#00acb2",
         id: "a3",
         x: 18,
@@ -94,7 +94,7 @@ const Hero = ({ isMobile }) => {
         delay: 0.3
       },
       {
-        url: "/images/hero/arun.jpg",
+        url: "/images/team/manavi.jpg",
         borderColor: "#f15b22",
         id: "a4",
         x: 74,

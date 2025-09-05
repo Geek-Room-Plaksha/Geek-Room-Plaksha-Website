@@ -26,7 +26,7 @@ const PartnersSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       slideToNext();
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 

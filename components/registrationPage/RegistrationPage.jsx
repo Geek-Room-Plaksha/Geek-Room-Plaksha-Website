@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Xarrow, { Xwrapper } from "react-xarrows";
@@ -13,13 +13,16 @@ import {
 } from "./RegistrationPage.styled";
 import Typography from "../display/typography/Typography";
 import { MarqueeDemo } from "./Marquee";
+import ApplicationForm from "./form";
 
 const applicationData = {
-  isOpen: false,
+  isOpen: true, // Changed to true to allow applications
   link: ""
 };
 
 const RegistrationPage = () => {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <RegistrationPageContainer style={{ paddingTop: "120px" }}>
       <TitleContainer>
@@ -31,20 +34,21 @@ const RegistrationPage = () => {
         </Typography>
       </TitleContainer>
       <MarqueeDemo></MarqueeDemo>
+
       <ApplyNowContainer>
         <ActionsContainer>
-          <Link
-            href={applicationData.link ? applicationData.link : "#"}
-            target="_blank"
+          <ApplyButton
+            disabled={!applicationData.isOpen}
+            onClick={() => applicationData.isOpen && setShowForm(true)}
           >
-            <ApplyButton disabled={!applicationData.isOpen}>
-              {applicationData.isOpen
-                ? "Apply Now"
-                : "Applications are closed. Stay tuned"}
-            </ApplyButton>
-          </Link>
+              Applications are currently closed
+          </ApplyButton>
         </ActionsContainer>
       </ApplyNowContainer>
+
+      {/* <div className="mt-12">
+        <ApplicationForm />
+      </div> */}
     </RegistrationPageContainer>
   );
 };

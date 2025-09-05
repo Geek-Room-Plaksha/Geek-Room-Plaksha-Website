@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Mail } from "lucide-react";
+import { Mail, Loader2 } from "lucide-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ const ContactForm = () => {
 
   const [isMobile, setIsMobile] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -23,6 +24,9 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
+    setResponseMessage("");
+
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact-us`, {
         method: "POST",
@@ -43,6 +47,8 @@ const ContactForm = () => {
       }
     } catch (error) {
       setResponseMessage("There was an error sending your message.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -102,6 +108,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 className="w-full p-3 border-solid border-[#00acb2] text-white rounded focus:outline-none focus:ring-2 focus:ring-[#00acb2] bg-transparent"
                 required
+                disabled={isLoading}
               />
             </div>
 
@@ -114,6 +121,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 className="w-full p-3 border-solid border-[#00acb2] rounded focus:outline-none focus:ring-2 focus:ring-[#00acb2] bg-transparent"
                 required
+                disabled={isLoading}
               />
             </div>
 
@@ -126,17 +134,30 @@ const ContactForm = () => {
                 rows={4}
                 className="w-full p-3 border-solid border-[#00acb2] rounded focus:outline-none focus:ring-2 focus:ring-[#00acb2] bg-transparent"
                 required
+                disabled={isLoading}
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-orange-500 text-white py-3 px-6 rounded-xl hover:bg-orange-600 transition-colors duration-300"
+              className="w-full bg-orange-500 text-white py-3 px-6 rounded-xl hover:bg-orange-600 transition-colors duration-300 flex justify-center items-center"
+              disabled={isLoading}
             >
-              Send Message
+              {isLoading ? (
+                <>
+                  <Loader2 className="animate-spin mr-2" size={20} />
+                  Sending...
+                </>
+              ) : (
+                "Send Message"
+              )}
             </button>
             {responseMessage && (
-              <p className="text-white mt-4">{responseMessage}</p>
+              <p
+                className={`mt-4 ${responseMessage.includes("error") ? "text-red-400" : "text-green-400"}`}
+              >
+                {responseMessage}
+              </p>
             )}
           </form>
         </div>

@@ -35,16 +35,15 @@ export const AvatarStack = styled.div`
   }
 `;
 
-export const FooterContainer = styled.div`
-  width: 100%;
+export const FooterContainer = styled.footer`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 2em;
-  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
-  background-color: ${({ theme }) => theme.colors.bgPrimary};
-  border-radius: 30px 30px 0 0;
+  padding: 3rem 2rem 1.5rem;
+  background-color: ${({ theme }) => theme.colors.background};
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media screen and (${devices.md}) {
     flex-direction: column;
@@ -80,45 +79,30 @@ export const LogoContainer = styled.div`
 
 export const FooterSocials = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: calc(100% / 3);
-  gap: 1em;
-  color: ${({ theme }) => theme.colors.contentSecondary};
+  padding: 1rem;
 
-  @media screen and (${devices.xl}) {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-
-  @media screen and (${devices.md}) {
-    width: 100%;
+  @media ${devices.sm} {
+    margin-top: 1rem;
   }
 `;
 
 export const FooterSocialIcons = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 0.5em;
-  color: ${({ theme }) => theme.colors.bodyPrimary};
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
 `;
 
 export const FooterMeta = styled.div`
   display: flex;
-  width: calc(100% / 3);
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: flex-end;
-  color: ${({ theme }) => theme.colors.contentSecondary};
-  gap: 0.8em;
-  text-align: right;
-
-  @media screen and (${devices.md}) {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-  }
+  width: 100%;
+  margin-top: 0.5rem;
 `;
 
 export const FooterGithub = styled(Link)`
@@ -168,4 +152,31 @@ export const ThemeToggleSwitch = styled.div`
     left: ${({ isDarkMode }) => (isDarkMode ? "50px" : "5px")};
     color: ${({ theme }) => theme.colors.brandBlue};
   }
+`;
+
+export const FooterSection = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2rem;
+
+  @media ${devices.md} {
+    flex-direction: row;
+  }
+
+  @media ${devices.sm} {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+`;
+
+export const FooterDivider = styled.hr`
+  width: 100%;
+  border: none;
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
+  margin: 1.5rem 0;
+  opacity: 0.5;
 `;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaSun, FaMoon } from "react-icons/fa"; // Import Font Awesome icons
+import { FaSun, FaMoon } from "react-icons/fa";
 
 import {
   Authors,
@@ -12,13 +12,17 @@ import {
   FooterSocials,
   LogoContainer,
   LogoWrapper,
-  ThemeToggleSwitch // Import the styled ThemeToggleSwitch
+  ThemeToggleSwitch,
+  FooterSection,
+  FooterDivider
 } from "./Footer.styled";
 import Typography from "../typography/Typography";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Avatar from "@/components/avatar/Avatar";
 import { useEffect, useState } from "react";
 import { devices, lightTheme } from "@/constants/theme";
@@ -44,157 +48,210 @@ function Footer({ toggleTheme, isDarkMode }) {
   }, []);
 
   return (
-    <FooterContainer>
-      <LogoWrapper>
-        <LogoContainer>
-          <Link href="/">
-            <div style={{ width: "100%", maxWidth: "300px", height: "auto" }}>
-              <Image
-                src={isDarkMode ? DarkModeLogo : LightModeLogo}
-                alt={"GR Logo"}
-                layout="responsive"
-                width={500}
-                height={60}
-                priority={true}
-              />
-            </div>
-          </Link>
-        </LogoContainer>
-        <Typography
-          variant="bodySmall"
-          subdued
-          style={{ paddingLeft: "0.5em" }}
-        >
-          Mohali, Punjab - 140306
-          <br />
-          Email : &nbsp;
-          <Link
-            href="mailto:geekroomplaksha@gmail.com"
-            style={{ color: "inherit", textDecoration: "none" }}
+    <FooterContainer
+      style={{
+        marginTop: "2rem",
+        padding: isMobile ? "2rem 1rem 1rem" : "3rem 2rem 1.5rem"
+      }}
+    >
+      <FooterSection>
+        <LogoWrapper>
+          <LogoContainer
+            style={{
+              width: isMobile ? "100%" : "80%",
+              justifyContent: isMobile ? "center" : "start"
+            }}
           >
-            geekroomplaksha@gmail.com
-          </Link>
-        </Typography>
-      </LogoWrapper>
-      <FooterSocials>
-        <Typography variant="body" subdued style={{ textAlign: "center" }}>
-          Follow us on Social Media
-        </Typography>
-        <FooterSocialIcons>
-          <Link
-            href="https://www.linkedin.com/company/geekroom-plaksha"
-            target="_blank"
-            style={{ color: "gray" }}
-          >
-            <LinkedInIcon
-              style={{ marginBottom: "-5px" }}
-              sx={{
-                fontSize: 25,
-                transition: "all 0.2s ease-in-out",
-
-                "&:hover": {
-                  transform: "translate(0, -1px)",
-                  color: "#0A66C2"
-                }
-              }}
-            />
-          </Link>
-          <Link
-            href="https://www.instagram.com/geekroom_plaksha/"
-            target="_blank"
-            style={{ color: "gray" }}
-          >
-            <InstagramIcon
-              style={{ marginBottom: "-5px" }}
-              sx={{
-                fontSize: 25,
-                transition: "all 0.2s ease-in-out",
-
-                "&:hover": {
-                  transform: "translate(0, -1px)",
-                  color: "#E1306C"
-                }
-              }}
-            />
-          </Link>
-          <Link
-            href="https://chat.whatsapp.com/KLsOEWvVMGEBbcxNqxIInD"
-            target="_blank"
-            style={{ color: "gray" }}
-          >
-            <WhatsAppIcon
-              style={{ marginBottom: "-5px" }}
-              sx={{
-                fontSize: 25,
-                transition: "all 0.2s ease-in-out",
-
-                "&:hover": {
-                  transform: "translate(0, -1px)",
-                  color: "#E1306C"
-                }
-              }}
-            />
-          </Link>
-        </FooterSocialIcons>
-      </FooterSocials>
-      <FooterMeta>
-        {/* <div
-          style={{
-            // paddingRight: "2.75rem",
-            paddingBottom: "0.8rem",
-            paddingRight: isMobile ? 0 : "initial"
-            // paddingBottom: isMobile ? "0.8rem" : "initial"
-          }}
-        >
-          <ThemeToggleSwitch onClick={toggleTheme} isDarkMode={isDarkMode}>
-            <FaSun className="icon sun" />
-            <FaMoon className="icon moon" />
-          </ThemeToggleSwitch>
-        </div> */}
-        <div
-          style={{
-            paddingBottom: "0.8rem",
-            paddingRight: isMobile ? 0 : "initial"
-          }}
-        >
-          Want to contribute to this website ?<br></br>Feel free to do so !
-        </div>
-        <Authors>
+            <Link href="/">
+              <div
+                style={{
+                  width: "100%",
+                  maxWidth: isMobile ? "200px" : "250px",
+                  height: "auto"
+                }}
+              >
+                <Image
+                  src={isDarkMode ? DarkModeLogo : LightModeLogo}
+                  alt={"GR Logo"}
+                  layout="responsive"
+                  width={500}
+                  height={60}
+                  priority={true}
+                />
+              </div>
+            </Link>
+          </LogoContainer>
           <Typography
             variant="bodySmall"
             subdued
-            style={{ whiteSpace: "normal", width: "90%" }}
+            style={{
+              marginTop: "1rem",
+              width: isMobile ? "100%" : "auto",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: isMobile ? "center" : "flex-start"
+            }}
           >
-            Made by{" "}
-            <a
-              href="https://www.linkedin.com/in/akshat-gupta-840740285/"
-              style={{ color: "#f15b22", textDecoration: "none" }}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: "0.5rem",
+                justifyContent: isMobile ? "center" : "flex-start"
+              }}
             >
-              Akshat
-            </a>{" "}
-            &{" "}
-            <a
-              href="https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/"
-              style={{ color: "#f15b22", textDecoration: "none" }}
+              <LocationOnIcon
+                style={{ fontSize: "1rem", marginRight: "0.5rem" }}
+              />
+              Mohali, Punjab - 140306
+            </div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: isMobile ? "center" : "flex-start"
+              }}
             >
-              Arun
-            </a>
+              <EmailIcon style={{ fontSize: "1rem", marginRight: "0.5rem" }} />
+              <Link
+                href="mailto:geekroomplaksha@gmail.com"
+                style={{
+                  color: "inherit",
+                  textDecoration: "none",
+                  transition: "color 0.2s"
+                }}
+              >
+                geekroomplaksha@gmail.com
+              </Link>
+            </div>
           </Typography>
-          <AvatarStack>
+        </LogoWrapper>
+
+        <FooterSocials>
+          <Typography
+            variant={isMobile ? "bodyEmphasized" : "body"}
+            style={{
+              textAlign: "center",
+              fontWeight: "600",
+              marginBottom: "1rem",
+              color: isDarkMode ? "#f0f0f0" : "#333"
+            }}
+          >
+            Connect With Us
+          </Typography>
+          <FooterSocialIcons>
             <Link
-              href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
+              href="https://www.linkedin.com/company/geekroom-plaksha"
               target="_blank"
+              aria-label="LinkedIn"
+              style={{ color: "gray" }}
             >
-              <Avatar
-                size={isMobile ? "sm" : "sm"}
-                // borderColor={lightTheme.colors.brandRed}
-                url={"/images/image.png"}
-                className="hover-effect"
-                borderWidth={"2px"}
+              <LinkedInIcon
+                style={{ margin: "0 10px" }}
+                sx={{
+                  fontSize: isMobile ? 24 : 28,
+                  transition: "all 0.2s ease-in-out",
+                  "&:hover": {
+                    transform: "translate(0, -3px)",
+                    color: "#0A66C2"
+                  }
+                }}
               />
             </Link>
-          </AvatarStack>{" "}
-        </Authors>
+            <Link
+              href="https://www.instagram.com/geekroom_plaksha/"
+              target="_blank"
+              aria-label="Instagram"
+              style={{ color: "gray" }}
+            >
+              <InstagramIcon
+                style={{ margin: "0 10px" }}
+                sx={{
+                  fontSize: isMobile ? 24 : 28,
+                  transition: "all 0.2s ease-in-out",
+                  "&:hover": {
+                    transform: "translate(0, -3px)",
+                    color: "#E1306C"
+                  }
+                }}
+              />
+            </Link>
+            <Link
+              href="https://chat.whatsapp.com/KLsOEWvVMGEBbcxNqxIInD"
+              target="_blank"
+              aria-label="WhatsApp"
+              style={{ color: "gray" }}
+            >
+              <WhatsAppIcon
+                style={{ margin: "0 10px" }}
+                sx={{
+                  fontSize: isMobile ? 24 : 28,
+                  transition: "all 0.2s ease-in-out",
+                  "&:hover": {
+                    transform: "translate(0, -3px)",
+                    color: "#25D366"
+                  }
+                }}
+              />
+            </Link>
+            <Link
+              href="https://github.com/Geek-Room-Plaksha"
+              target="_blank"
+              aria-label="GitHub"
+              style={{ color: "gray" }}
+            >
+              <GitHubIcon
+                style={{ margin: "0 10px" }}
+                sx={{
+                  fontSize: isMobile ? 24 : 28,
+                  transition: "all 0.2s ease-in-out",
+                  "&:hover": {
+                    transform: "translate(0, -3px)",
+                    color: isDarkMode ? "#fff" : "#333"
+                  }
+                }}
+              />
+            </Link>
+          </FooterSocialIcons>
+        </FooterSocials>
+      </FooterSection>
+
+      <FooterDivider />
+
+      <FooterMeta>
+        <div
+          style={{
+            paddingBottom: "0.8rem",
+            paddingRight: isMobile ? 0 : "initial",
+            textAlign: "center",
+            paddingLeft: isMobile ? "1rem" : 0,
+            paddingRight: isMobile ? "1rem" : 0
+          }}
+        >
+          <Typography variant={isMobile ? "bodySmall" : "body"}>
+            {isMobile ? (
+              <>
+                Want to contribute?{" "}
+                <Link
+                  href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
+                  style={{ color: "#f15b22", textDecoration: "none" }}
+                >
+                  Join us on GitHub
+                </Link>
+              </>
+            ) : (
+              <>
+                Want to contribute to this website?{" "}
+                <Link
+                  href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
+                  style={{ color: "#f15b22", textDecoration: "none" }}
+                >
+                  Join us on GitHub
+                </Link>
+              </>
+            )}
+          </Typography>
+        </div>
       </FooterMeta>
     </FooterContainer>
   );

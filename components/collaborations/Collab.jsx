@@ -55,7 +55,7 @@ const PartnersSection = () => {
           <div className="text-gray-400 mt-4">
             Interested in Collaborating ?{" "}
             <a
-              href="mailto:geekroomplaksha@gmail.com"
+              href="mailto:geekroom.club@plaksha.edu.in"
               className="text-[#f15b22] hover:text-[#f15b22]"
             >
               Contact us

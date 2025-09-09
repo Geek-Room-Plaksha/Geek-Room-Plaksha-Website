@@ -22,7 +22,7 @@ import {
   SpeakerName,
   SpeakersCardContainer,
   SpeakersContainer,
-  Button,
+  Button
 } from "./EventPage.styled";
 import Typography from "../../display/typography/Typography";
 import Avatar from "../../avatar/Avatar";
@@ -52,8 +52,12 @@ function EventPage({ eventData }) {
           <SpeakerInfo>
             <Avatar url={speaker.image} size="lg" borderWidth={"0"} />
             <SpeakerName>
-              <Typography variant="h4">{speaker.name}</Typography>
-              <Typography variant="bodySmall">{speaker.title}</Typography>
+              <Typography variant="h4" className="h4">
+                {speaker.name}
+              </Typography>
+              <Typography variant="bodySmall" className="bodySmall">
+                {speaker.title}
+              </Typography>
             </SpeakerName>
           </SpeakerInfo>
         </SpeakerCard>
@@ -99,7 +103,7 @@ function EventPage({ eventData }) {
               {eventData.speakers != undefined &&
                 eventData.speakers.length > 0 && (
                   <SpeakersContainer>
-                    <Typography variant="h2">
+                    <Typography variant="h2" className="h2">
                       {isHack ? "Partners" : "Organizers"}
                     </Typography>
 
@@ -112,10 +116,10 @@ function EventPage({ eventData }) {
             <Right>
               <InfoModal status={eventData.status}>
                 <InfoModalDate>
-                  <Typography variant="body" subdued>
+                  <Typography variant="body" subdued className="body">
                     Mark your calendars for
                   </Typography>
-                  <Typography variant="h4">
+                  <Typography variant="h4" className="h4">
                     {eventData.startDate &&
                     dayjs.tz(eventData.startDate).format("D") !==
                       dayjs.tz(eventData.endDate).format("D")
@@ -124,25 +128,27 @@ function EventPage({ eventData }) {
                         isoToDate(eventData.endDate)
                       : isoToDate(eventData.startDate)}
                   </Typography>
-                  <Typography variant="body" subdued>
+                  <Typography variant="body" subdued className="body">
                     Time
                   </Typography>
-                  <Typography variant="h4">
+                  <Typography variant="h4" className="h4">
                     {dayjs.tz(eventData.startDate).format("h:mm A")} -{" "}
                     {dayjs.tz(eventData.endDate).format("h:mm A")}
                   </Typography>
                 </InfoModalDate>
                 <InfoModalVenue>
-                  <Typography variant="body" subdued>
+                  <Typography variant="body" subdued className="body">
                     Venue
                   </Typography>
-                  <Typography variant="h4">{eventData.venue}</Typography>
+                  <Typography variant="h4" className="h4">
+                    {eventData.venue}
+                  </Typography>
                 </InfoModalVenue>
                 <InfoModalRegistration>
-                  <Typography variant="body" subdued>
+                  <Typography variant="body" subdued className="body">
                     Registration
                   </Typography>
-                  <Typography variant="h4">
+                  <Typography variant="h4" className="h4">
                     {eventData.status === "upcoming" && capitalize("Open")}
                     {eventData.status === "closed" && capitalize("closed")}
                     {eventData.status === "ended" && capitalize("ended")}

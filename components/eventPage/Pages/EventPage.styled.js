@@ -164,6 +164,28 @@ export const SpeakersContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1em;
+
+  /* Override Typography styles to maintain desktop font sizes on mobile */
+  .h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.4px;
+  }
+
+  .h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+  }
+
+  .bodySmall {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.4px;
+  }
 `;
 
 export const SpeakersCardContainer = styled.div`
@@ -181,9 +203,7 @@ export const SpeakerCard = styled.div`
   padding: 2em;
   gap: 1em;
   box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.16);
-  cursor:
-    url("/cursors/cursor-pointer.svg") 10 0,
-    auto;
+  cursor: url("/cursors/cursor-pointer.svg") 10 0, auto;
   transition: all 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0.2);
 
@@ -236,8 +256,23 @@ export const InfoModal = styled.div`
       status === "ended" || status === "closed"
         ? theme.colors.brandRed
         : status === "upcoming" || status === "open"
-          ? theme.colors.brandGreen
-          : theme.colors.brandBlue};
+        ? theme.colors.brandGreen
+        : theme.colors.brandBlue};
+
+  /* Override Typography styles to maintain desktop font sizes on mobile */
+  .h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+  }
+
+  .body {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
 
   @media screen and (${devices.lg}) {
     width: 100%;

@@ -18,8 +18,7 @@ const teamData = {
       id: 2,
       profile: {
         name: "Shreya Khanna",
-        profileLink:
-          "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
+        profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
         image: "/images/team/shreya.png"
       },
       role: "Head of Internal Affairs"
@@ -82,9 +81,7 @@ const teamData = {
       role: "Founding President (2024-25)"
     }
   ],
-  poc:[
-    
-  ],
+  poc: [],
   members: [
     {
       id: 1,
@@ -141,6 +138,130 @@ const teamData = {
       },
       role: "Content"
     },
+    {
+      id: 7,
+      profile: {
+        name: "Tista Tewani",
+        profileLink: "https://www.instagram.com/t1sta06",
+        image: "/images/team/tista.jpg"
+      },
+      role: "Content"
+    },
+    {
+      id: 8,
+      profile: {
+        name: "Achintya Mathur",
+        profileLink:
+          "https://www.linkedin.com/in/achintya-mathur-b11862381",
+        image: "/images/team/achintya.jpg"
+      },
+      role: "Tech"
+    },
+    {
+      id: 9,
+      profile: {
+        name: "Ronan Henriques",
+        profileLink: "#",
+        image: "/images/team/ronan.jpg"
+      },
+      role: "Tech"
+    },
+    {
+      id: 10,
+      profile: {
+        name: "Keshava Prasad",
+        profileLink:
+          "https://www.instagram.com/_keshava_prasad?igsh=cDQ5ZGFrZHEybWZx&utm_source=qr",
+        image: "/images/team/Keshava.jpeg"
+      },
+      role: "Tech"
+    },
+    {
+      id: 11,
+      profile: {
+        name: "Kavish",
+        profileLink: "https://www.instagram.com/kavish_k_30",
+        image: "/images/team/kavish.jpeg"
+      },
+      role: "Marketing"
+    },
+    {
+      id: 12,
+      profile: {
+        name: "Mudith Daga",
+        profileLink:
+          "https://www.linkedin.com/in/mudithdaga",
+        image: "/images/team/mudith.jpg"
+      },
+      role: "Tech"
+    },
+    {
+      id: 13,
+      profile: {
+        name: "Sahil Patel",
+        profileLink:
+          "https://www.linkedin.com/in/sahil-patel-772a44323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        image: "/images/team/sahil patel.jpeg"
+      },
+      role: "Design"
+    },
+    {
+      id: 14,
+      profile: {
+        name: "Saanvi Bhaskar",
+        profileLink: "https://www.linkedin.com/in/saanvi-bhaskar-81366b2ba/",
+        image: "/images/team/saanvi.jpg"
+      },
+      role: "Content"
+    },
+    {
+      id: 15,
+      profile: {
+        name: "Jaskirat Kaur Anand",
+        profileLink:
+          "https://www.instagram.com/jaskiratt_kaurr?igsh=MTZvOTI0cG5kbjZuOQ%3D%3D&utm_source=qr",
+        image: "/images/team/jaskirat.jpg"
+      },
+      role: "Marketing"
+    },
+    {
+      id: 16,
+      profile: {
+        name: "Avni Gaur",
+        profileLink:
+          "https://www.linkedin.com/in/avni-gaur-246253252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        image: "/images/team/avni.jpeg"
+      },
+      role: "Tech"
+    },
+    {
+      id: 17,
+      profile: {
+        name: "Yesha Ravani",
+        profileLink:
+          "https://www.linkedin.com/in/yesha-ravani-785b23321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        image: "/images/team/yesha.jpeg"
+      },
+      role: "Tech"
+    },
+    {
+      id: 18,
+      profile: {
+        name: "Rohan Gupta",
+        profileLink: "https://www.linkedin.com/in/rohan-gupta-32474b1a0/",
+        image: "/images/team/rohan.jpg"
+      },
+      role: "Tech"
+    },
+    {
+      id: 19,
+      profile: {
+        name: "Yatharth Nehra",
+        profileLink: "https://www.linkedin.com/in/yatharth-nehra",
+        image: "/images/team/yatharth.png"
+      },
+      role: "Tech"
+    }
   ],
   alumni: [
     {
@@ -179,7 +300,7 @@ const teamData = {
       },
       role: "Design (2024-25)"
     }
-  ],
+  ]
 };
 
 teamData.members.sort((a, b) => a.profile.name.localeCompare(b.profile.name));

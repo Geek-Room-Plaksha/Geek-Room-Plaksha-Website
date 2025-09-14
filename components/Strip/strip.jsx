@@ -13,7 +13,7 @@ const StatsDisplay = () => {
 
       <div className="flex-1 max-w-sm rounded-2xl border-solid border-[#00acb2] px-12 py-12 text-center text-white">
         <div className="md:text-6xl text-4xl font-bold font-sans mb-3">
-          <NumberTicker value={8} />
+          <NumberTicker value={9} />
         </div>
         <div className="text-2xl">Events Held</div>
       </div>

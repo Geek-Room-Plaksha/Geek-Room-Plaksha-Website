@@ -11,7 +11,7 @@ const staticEventsData = [
     startDate: "2025-9-13T12:00:00",
     endDate: "2025-9-14T12:00:00",
     venue: "Online (24HRS)",
-    status: "upcoming",
+    status: "ended",
     registrationLink:
       "https://unstop.com/hackathons/bit-n-build-around-the-world-2025-google-developer-student-clubs-crce-1528986",
     speakers: [

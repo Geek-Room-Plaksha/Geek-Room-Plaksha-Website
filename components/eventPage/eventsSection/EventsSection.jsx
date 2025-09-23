@@ -62,9 +62,21 @@ function EventsSection({ isMobile }) {
           {truncateText(event.shortDescription, limit)}
         </Typography>
       </TopContainer>
-      <Link href={`/events/${event.slug}`} style={{ textDecoration: "none" }}>
-        <Button>Learn More</Button>
-      </Link>
+      {/* Check if isSlug is false and externalUrl exists, if so use that URL, otherwise use the slug page */}
+      {event.isSlug === false && event.externalUrl ? (
+        <Link
+          href={event.externalUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <Button>Learn More</Button>
+        </Link>
+      ) : (
+        <Link href={`/events/${event.slug}`} style={{ textDecoration: "none" }}>
+          <Button>Learn More</Button>
+        </Link>
+      )}
     </EventCard>
   ));
 

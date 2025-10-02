@@ -62,16 +62,6 @@ const teamData = {
       role: "Head of Content"
     },
     {
-      id: 7,
-      profile: {
-        name: "Arunachalam Vijayanand",
-        profileLink:
-          "https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/",
-        image: "/images/team/arun.jpg"
-      },
-      role: "Head of Tech"
-    },
-    {
       id: 8,
       profile: {
         name: "Akshat Gupta",
@@ -79,7 +69,17 @@ const teamData = {
         image: "/images/team/Akshat.png"
       },
       role: "Founding President (2024-25)"
-    }
+    },
+    {
+      id: 7,
+      profile: {
+        name: "Arunachalam Vijayanand",
+        profileLink:
+          "https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/",
+        image: "/images/team/arun.jpg"
+      },
+      role: "Tech Lead (2024-25)"
+    },
   ],
   poc: [],
   members: [

@@ -70,16 +70,6 @@ const teamData = {
       },
       role: "Founding President (2024-25)"
     },
-    {
-      id: 7,
-      profile: {
-        name: "Arunachalam Vijayanand",
-        profileLink:
-          "https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/",
-        image: "/images/team/arun.jpg"
-      },
-      role: "Tech Lead (2024-25)"
-    },
   ],
   poc: [],
   members: [
@@ -91,34 +81,6 @@ const teamData = {
         image: "/images/team/proshita.png"
       },
       role: "Content"
-    },
-    {
-      id: 2,
-      profile: {
-        name: "Harmannat Kaur",
-        profileLink: "https://www.linkedin.com/in/harmannat-kaur-5516372b1",
-        image: "/images/team/harmannat.png"
-      },
-      role: "Marketing"
-    },
-    {
-      id: 3,
-      profile: {
-        name: "Divyannsh Pincha",
-        profileLink: "https://www.linkedin.com/in/divyannsh-pincha-9a9862240",
-        image: "/images/team/divyannsh.png"
-      },
-      role: "Tech"
-    },
-    {
-      id: 4,
-      profile: {
-        name: "Sahil Gada",
-        profileLink:
-          "https://www.instagram.com/sahil.gada__/profilecard/?igsh=MXhocWFxcTJ0czhuNg==",
-        image: "/images/team/sahil.png"
-      },
-      role: "Marketing"
     },
     {
       id: 5,
@@ -252,15 +214,6 @@ const teamData = {
         image: "/images/team/rohan.jpg"
       },
       role: "Tech"
-    },
-    {
-      id: 19,
-      profile: {
-        name: "Yatharth Nehra",
-        profileLink: "https://www.linkedin.com/in/yatharth-nehra",
-        image: "/images/team/yatharth.png"
-      },
-      role: "Tech"
     }
   ],
   alumni: [
@@ -281,6 +234,16 @@ const teamData = {
         image: "/images/team/nikunj.png"
       },
       role: "Head of Robotics (2024-25)"
+    },
+    {
+      id: 7,
+      profile: {
+        name: "Arunachalam Vijayanand",
+        profileLink:
+          "https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/",
+        image: "/images/team/arun.jpg"
+      },
+      role: "Tech Lead (2024-25)"
     },
     {
       id: 3,

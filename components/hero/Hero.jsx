@@ -199,14 +199,14 @@ const Hero = ({ isMobile }) => {
                     onMouseEnter={() => setIsBuildHighlighted(true)}
                     onMouseLeave={() => setIsBuildHighlighted(false)}
                   >
-                    Grow.
+                    Build.
                   </HeroTextSpan>
                   <HeroTextSpan
                     color="#00acb2"
                     onMouseEnter={() => setIsGrowHighlighted(true)}
                     onMouseLeave={() => setIsGrowHighlighted(false)}
                   >
-                    Inspire.
+                    Grow.
                   </HeroTextSpan>
                 </div>
                 <Xwrapper>

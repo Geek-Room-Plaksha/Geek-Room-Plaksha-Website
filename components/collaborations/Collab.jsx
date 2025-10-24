@@ -63,7 +63,11 @@ const partners = [
     name: "DS Brar Center for GWiST",
     logo: "images/Collaboration/ds.png"
   },
-  
+  {
+    id: 12,
+    name: "Hack Culture",
+    logo: "images/Collaboration/hc.png"
+  }
 ];
 
 const PartnersSection = () => {

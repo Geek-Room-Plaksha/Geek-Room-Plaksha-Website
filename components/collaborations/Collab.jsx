@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Typography from "../display/typography/Typography";
 import Marquee from "../ui/marquee";
 
@@ -9,29 +9,9 @@ const partners = [
     logo: "images/Collaboration/gfg.png"
   },
   {
-    id: 2,
-    name: "FitoorxPrayas",
-    logo: "images/Collaboration/fxp.png"
-  },
-  {
-    id: 3,
-    name: "E-Cell Plaksha",
-    logo: "images/Collaboration/ecel.png"
-  },
-  {
-    id: 12,
-    name: "GDSC CRCE",
-    logo: "images/Collaboration/crce.jpeg"
-  },
-  {
     id: 5,
     name: ".xyz",
     logo: "images/Collaboration/xyz.png"
-  },
-  {
-    id: 6,
-    name: "Unstop",
-    logo: "images/Collaboration/unstop.png"
   },
   {
     id: 7,
@@ -67,12 +47,58 @@ const partners = [
     id: 12,
     name: "Hack Culture",
     logo: "images/Collaboration/hc.png"
-  }
+  },
+  {
+    id: 3,
+    name: "E-Cell Plaksha",
+    logo: "images/Collaboration/ecel.png"
+  },
+  {
+    id: 12,
+    name: "GDSC CRCE",
+    logo: "images/Collaboration/crce.jpeg"
+  },
+  {
+    id: 2,
+    name: "FitoorxPrayas",
+    logo: "images/Collaboration/fxp.png"
+  },
+  {
+    id: 6,
+    name: "Unstop",
+    logo: "images/Collaboration/unstop.png"
+  },
 ];
 
 const PartnersSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.5 // Trigger when 10% of the component is visible
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="w-full pt-5 md:pt-0 pb-20">
+    <div ref={sectionRef} className="w-full pt-5 md:pt-0 pb-20">
       <div className="w-full px-4">
         <div className="flex justify-center">
           <Typography variant="h1">Our Collaborations</Typography>
@@ -90,20 +116,22 @@ const PartnersSection = () => {
         </div>
 
         <div className="relative mt-8 w-full">
-          <Marquee pauseOnHover className="[--duration:40s] w-full">
-            {partners.map((partner) => (
-              <div
-                key={partner.id}
-                className="rounded-xl shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center bg-white/5 backdrop-blur-sm mx-4 w-80 h-48 md:w-[30rem] md:h-64 overflow-hidden"
-              >
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="w-full h-full object-fill"
-                />
-              </div>
-            ))}
-          </Marquee>
+          {isVisible && (
+            <Marquee pauseOnHover className="[--duration:60s] w-full">
+              {partners.map((partner) => (
+                <div
+                  key={partner.id}
+                  className="rounded-xl shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center bg-white/5 backdrop-blur-sm mx-4 w-80 h-48 md:w-[30rem] md:h-64 overflow-hidden"
+                >
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="w-full h-full object-fill"
+                  />
+                </div>
+              ))}
+            </Marquee>
+          )}
         </div>
       </div>
     </div>

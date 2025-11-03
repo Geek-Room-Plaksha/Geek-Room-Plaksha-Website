@@ -66,10 +66,10 @@ const teamData = {
       profile: {
         name: "Akshat Gupta",
         profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png"
+        image: "/images/team/Akshat.jpg"
       },
       role: "Founding President (2024-25)"
-    },
+    }
   ],
   poc: [],
   members: [
@@ -113,8 +113,7 @@ const teamData = {
       id: 8,
       profile: {
         name: "Achintya Mathur",
-        profileLink:
-          "https://www.linkedin.com/in/achintya-mathur-b11862381",
+        profileLink: "https://www.linkedin.com/in/achintya-mathur-b11862381",
         image: "/images/team/achintya.jpg"
       },
       role: "Tech"
@@ -151,8 +150,7 @@ const teamData = {
       id: 12,
       profile: {
         name: "Mudith Daga",
-        profileLink:
-          "https://www.linkedin.com/in/mudithdaga",
+        profileLink: "https://www.linkedin.com/in/mudithdaga",
         image: "/images/team/mudith.jpg"
       },
       role: "Tech"

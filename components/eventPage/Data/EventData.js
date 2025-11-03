@@ -11,7 +11,7 @@ const staticEventsData = [
     status: "upcoming",
     startDate: "2025-11-15T12:00:00",
     endDate: "2025-11-16T12:00:00",
-    venue: "Plaksha University",
+    venue: "Plaksha University"
   },
   {
     slug: "bnb-punjab",
@@ -235,7 +235,7 @@ const staticEventsData = [
         id: 2,
         name: "Akshat Gupta",
         profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png",
+        image: "/images/team/Akshat.jpg",
         title: "Teaching Assistant"
       },
       {
@@ -277,7 +277,7 @@ const staticEventsData = [
         id: 1,
         name: "Akshat Gupta",
         profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png"
+        image: "/images/team/Akshat.jpg"
         // title: "Instructor"
       }
     ]
@@ -408,7 +408,7 @@ const staticEventsData = [
         id: 3,
         name: "Akshat Gupta",
         profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png",
+        image: "/images/team/Akshat.jpg",
         title: "Instructor"
       },
       {

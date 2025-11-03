@@ -117,7 +117,7 @@ const PartnersSection = () => {
 
         <div className="relative mt-8 w-full">
           {isVisible && (
-            <Marquee lassName="[--duration:80s] w-full">
+            <Marquee lassName="[--duration:120s] w-full">
               {partners.map((partner) => (
                 <div
                   key={partner.id}

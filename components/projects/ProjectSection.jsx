@@ -10,7 +10,7 @@ const projects = [
     description:
       "Plaksha-themed mini-game (inspired by Suika) exclusively for UG29 batch Orientation.",
     imageUrl: "/images/projects/pang.png",
-    link: "https://pangpang.geekroom-plaksha.tech/",
+    link: "https://pangpang.geekroomplaksha.com/",
     authors: [
       {
         // name: "Armaan Raisinghani",

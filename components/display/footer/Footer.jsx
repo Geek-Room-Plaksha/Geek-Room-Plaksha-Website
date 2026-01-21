@@ -114,14 +114,14 @@ function Footer({ toggleTheme, isDarkMode }) {
             >
               <EmailIcon style={{ fontSize: "1rem", marginRight: "0.5rem" }} />
               <Link
-                href="mailto:geekroomplaksha@gmail.com"
+                href="mailto:geekroom.club@plaksha.edu.in"
                 style={{
                   color: "inherit",
                   textDecoration: "none",
                   transition: "color 0.2s"
                 }}
               >
-                geekroomplaksha@gmail.com
+                geekroom.club@plaksha.edu.in
               </Link>
             </div>
           </Typography>

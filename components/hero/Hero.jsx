@@ -38,20 +38,26 @@ const Hero = ({ isMobile }) => {
 
   const heroTextElements = useMemo(
     () => [
-      { text: "Web", id: "web", color: "#00acb2", x: 55, y: 20, delay: 0.1 },
+      { text: "Web", 
+        id: "web", 
+        color: "#00acb2", 
+        x: 38, 
+        y: 20, 
+        delay: 0.1 
+      },
       {
         text: "AI ML",
         id: "tensorflow",
         color: "#f15b22",
-        x: 38,
-        y: 79,
+        x: 22,
+        y: 80,
         delay: 0.4
       },
       {
         text: "Android",
         id: "android",
         color: "#00acb2",
-        x: 20,
+        x: 8,
         y: 20,
         delay: 1.2
       },
@@ -59,9 +65,25 @@ const Hero = ({ isMobile }) => {
         text: "DSA",
         id: "flutter",
         color: "#f15b22",
-        x: 80,
+        x: 52,
         y: 80,
         delay: 2.3
+      },
+      {
+        text: "Cloud",
+        id: "cloud",
+        color: "#00acb2",
+        x: 68,
+        y: 20,
+        delay: 1.6
+      },
+      {
+        text: "Blockchain",
+        id: "blockchain",
+        color: "#f15b22",
+        x: 82,
+        y: 80,
+        delay: 0.8
       }
     ],
     []
@@ -73,7 +95,7 @@ const Hero = ({ isMobile }) => {
         url: "/images/team/armaan.png",
         borderColor: "#f15b22",
         id: "a1",
-        x: 35,
+        x: 22,
         y: 20,
         delay: 0.9
       },
@@ -81,25 +103,41 @@ const Hero = ({ isMobile }) => {
         url: "/images/team/shreya.png",
         borderColor: "#00acb2",
         id: "a2",
-        x: 60,
-        y: 65,
+        x: 38,
+        y: 70,
         delay: 1.5
       },
       {
         url: "/images/team/divy.png",
         borderColor: "#00acb2",
         id: "a3",
-        x: 18,
-        y: 65,
+        x: 8,
+        y: 70,
         delay: 0.3
       },
       {
         url: "/images/team/manavi.jpg",
         borderColor: "#f15b22",
         id: "a4",
-        x: 74,
+        x: 52,
         y: 20,
         delay: 0.3
+      },
+      {
+        url: "/images/team/maan.png",
+        borderColor: "#00acb2",
+        id: "a5",
+        x: 68,
+        y: 70,
+        delay: 0.7
+      },
+      {
+        url: "/images/team/trinav.jpg",
+        borderColor: "#f15b22",
+        id: "a6",
+        x: 82,
+        y: 20,
+        delay: 1.1
       }
     ],
     []
@@ -107,6 +145,7 @@ const Hero = ({ isMobile }) => {
 
   const [isTextHighlighted, setIsTextHighlighted] = useState(false);
   const [isAvatarHighlighted, setIsAvatarHighlighted] = useState(false);
+  const [isBuildHighlighted, setIsBuildHighlighted] = useState(false);
   const [isGrowHighlighted, setIsGrowHighlighted] = useState(false);
 
   const updatedXArrows = useXarrow();
@@ -154,6 +193,13 @@ const Hero = ({ isMobile }) => {
                     onMouseLeave={() => setIsAvatarHighlighted(false)}
                   >
                     Connect.
+                  </HeroTextSpan>
+                  <HeroTextSpan
+                    color="#00acb2"
+                    onMouseEnter={() => setIsBuildHighlighted(true)}
+                    onMouseLeave={() => setIsBuildHighlighted(false)}
+                  >
+                    Build.
                   </HeroTextSpan>
                   <HeroTextSpan
                     color="#00acb2"
@@ -248,21 +294,93 @@ const Hero = ({ isMobile }) => {
                     strokeWidth={2}
                     zIndex={-2}
                     headColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isAvatarHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                  />
+                  <Xarrow
+                    start={refsById["a4"]}
+                    end={refsById["a5"]}
+                    showHead={false}
+                    showTail={false}
+                    startAnchor={"middle"}
+                    endAnchor={"middle"}
+                    headShape={"circle"}
+                    tailShape={"circle"}
+                    tailSize={3}
+                    headSize={3}
+                    curveness={0}
+                    strokeWidth={2}
+                    zIndex={-2}
+                    headColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                    tailColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                    lineColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isAvatarHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                  />
+                  <Xarrow
+                    start={refsById["a5"]}
+                    end={refsById["a6"]}
+                    showHead={false}
+                    showTail={false}
+                    startAnchor={"middle"}
+                    endAnchor={"middle"}
+                    headShape={"circle"}
+                    tailShape={"circle"}
+                    tailSize={3}
+                    headSize={3}
+                    curveness={0}
+                    strokeWidth={2}
+                    zIndex={-2}
+                    headColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                    tailColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                    lineColor={
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isAvatarHighlighted
                         ? "#f15b22"
@@ -284,21 +402,21 @@ const Hero = ({ isMobile }) => {
                     strokeWidth={2}
                     zIndex={-2}
                     headColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isAvatarHighlighted
                         ? "#f15b22"
@@ -311,7 +429,7 @@ const Hero = ({ isMobile }) => {
                     end="web"
                     showHead={true}
                     showTail={true}
-                    startAnchor={"top"}
+                    startAnchor={"left"}
                     endAnchor={"right"}
                     headShape={"circle"}
                     tailShape={"circle"}
@@ -321,21 +439,21 @@ const Hero = ({ isMobile }) => {
                     zIndex={-2}
                     strokeWidth={2}
                     headColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
@@ -358,21 +476,21 @@ const Hero = ({ isMobile }) => {
                     zIndex={-2}
                     strokeWidth={2}
                     headColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
@@ -395,21 +513,95 @@ const Hero = ({ isMobile }) => {
                     zIndex={-2}
                     strokeWidth={2}
                     headColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     tailColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"
                         : "#F1F1F1"
                     }
                     lineColor={
-                      isGrowHighlighted
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                  />
+
+                  <Xarrow
+                    start="flutter"
+                    end="cloud"
+                    showHead={true}
+                    showTail={true}
+                    startAnchor={"right"}
+                    endAnchor={"left"}
+                    headShape={"circle"}
+                    tailShape={"circle"}
+                    tailSize={3}
+                    headSize={3}
+                    curveness={0}
+                    zIndex={-2}
+                    strokeWidth={2}
+                    headColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                    tailColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                    lineColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                  />
+
+                  <Xarrow
+                    start="cloud"
+                    end="blockchain"
+                    showHead={true}
+                    showTail={true}
+                    startAnchor={"right"}
+                    endAnchor={"top"}
+                    headShape={"circle"}
+                    tailShape={"circle"}
+                    tailSize={3}
+                    headSize={3}
+                    curveness={0}
+                    zIndex={-2}
+                    strokeWidth={2}
+                    headColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                    tailColor={
+                      isGrowHighlighted || isBuildHighlighted
+                        ? "#00acb2"
+                        : isTextHighlighted
+                        ? "#f15b22"
+                        : "#F1F1F1"
+                    }
+                    lineColor={
+                      isGrowHighlighted || isBuildHighlighted
                         ? "#00acb2"
                         : isTextHighlighted
                         ? "#f15b22"

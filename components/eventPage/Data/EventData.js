@@ -1,5 +1,67 @@
 const staticEventsData = [
   {
+    slug: "external-event",
+    title: "TrackShift",
+    isHack: true,
+    isSlug: false, // This indicates that the event should not have a slug page
+    externalUrl: "https://trackshift.in", // The URL to redirect to when "Learn More" is clicked
+    shortDescription:
+      "Brought to you by Mphasis F1 Foundation in association with DS Brar Center for GWiST and MoneyGram Haas F1 Team hosted at Plaksha University.",
+    thumbnail: "/images/events/trackshift/poster.png",
+    status: "upcoming",
+    startDate: "2025-11-15T12:00:00",
+    endDate: "2025-11-16T12:00:00",
+    venue: "Plaksha University"
+  },
+  {
+    slug: "bnb-punjab",
+    title: "BnB Punjab Edition",
+    isHack: true,
+    isSlug: true, // This is the default behavior
+    shortDescription:
+      "Bit N Build is an international hackathon hosted by GDSC CRCE, where Round 1 involves regional hackathons across the globe. This year, the Punjab Round is being organized by Geek Room Plaksha on 13th-14th September 2025.",
+    thumbnail: "/images/events/bnb/poster.png",
+    coverPhoto: "/images/events/bnb/cover.png",
+    description:
+      "<p><strong>Bit N Build</strong> is an international hackathon hosted by GDSC CRCE, where Round 1 involves regional hackathons across the globe. This year, the Punjab Round is being organized by Geek Room Plaksha 📅 13th-14th September 2025. The top teams will win an all-expenses-paid trip to Mumbai for the grand finale 📅 11th-12th October 2025.</p> <p>This is an <strong>open innovation hackathon</strong> with no restrictions — build whatever you want, unleash your creativity, and showcase your best ideas!</p> <p><strong>Why Join? 💡</strong></p> <ul> <li>✈️ Free trip to Mumbai for Winner</li> <li>💰 Cash prizes worth ₹8,000</li> <li>🌐 Domains, subscriptions, and much more</li> <li>📜 Certificates for all participants</li> </ul> <p><strong>Team Guidelines 👥</strong></p> <ul> <li>👨‍👩‍👧 Team size: 2–4 members</li> <li>🌸 Each team must have at least one female member</li> </ul> <p><strong>Hackathon Flow ⏱️</strong></p> <ul> <li>🚀 Hack starts at 12 PM (Sept 13) and ends at 12 PM (Sept 14)</li> <li>📝 After the hack, there will be a pre-screening round</li> <li>🎤 Selected teams will present to the final jury</li> <li>📂 Submission Requirements: A presentation deck and your GitHub repo (must be public)</li> <li>⚠️ Only start working on your project within the hackathon time. Any commit before or after the official window may lead to disqualification.</li> </ul> <p>👉 Click on the Register Now button and register for the <strong>Punjab Exclusive Online State Hackathon – Internal Round</strong> through Unstop!</p> <p>Be part of a global coding experience that goes beyond boundaries—innovate, build, and shine on the international stage! 🌍✨</p>",
+    startDate: "2025-9-13T12:00:00",
+    endDate: "2025-9-14T12:00:00",
+    venue: "Online (24HRS)",
+    status: "ended",
+    registrationLink:
+      "https://unstop.com/hackathons/bit-n-build-around-the-world-2025-google-developer-student-clubs-crce-1528986",
+    speakers: [
+      {
+        id: 1,
+        name: "DS Brar Centre for GWiST",
+        profileLink: "https://plaksha.edu.in/ds-brar-center",
+        image: "/images/events/bnb/ds.png",
+        title: ""
+      },
+      {
+        id: 3,
+        name: ".xyz",
+        profileLink: "https://gen.xyz/",
+        image: "/images/events/Hack-Summit/xyz.png",
+        title: ""
+      },
+      {
+        id: 4,
+        name: "CodeCrafters",
+        profileLink: "https://codecrafters.io/",
+        image: "/images/events/Hack-Summit/cc.png",
+        title: ""
+      },
+      {
+        id: 5,
+        name: "Unstop",
+        profileLink: "https://unstop.com/",
+        image: "/images/events/Hack-Summit/unstop.jpg",
+        title: ""
+      }
+    ]
+  },
+  {
     slug: "git-github-2.0",
     title: "Git Github Workshop",
     shortDescription:
@@ -31,7 +93,7 @@ const staticEventsData = [
         profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
         image: "/images/team/shreya.png",
         title: "Instructor"
-      },
+      }
     ]
   },
   {
@@ -173,7 +235,7 @@ const staticEventsData = [
         id: 2,
         name: "Akshat Gupta",
         profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png",
+        image: "/images/team/Akshat.jpg",
         title: "Teaching Assistant"
       },
       {
@@ -215,7 +277,7 @@ const staticEventsData = [
         id: 1,
         name: "Akshat Gupta",
         profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png"
+        image: "/images/team/Akshat.jpg"
         // title: "Instructor"
       }
     ]
@@ -346,7 +408,7 @@ const staticEventsData = [
         id: 3,
         name: "Akshat Gupta",
         profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png",
+        image: "/images/team/Akshat.jpg",
         title: "Instructor"
       },
       {

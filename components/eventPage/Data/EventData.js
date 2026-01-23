@@ -1,4 +1,18 @@
 const staticEventsData = [
+    {
+    slug: "external-event",
+    title: "MediThon",
+    isHack: true,
+    isSlug: false, // This indicates that the event should not have a slug page
+    externalUrl: "https://medithon.devpost.com/", // The URL to redirect to when "Learn More" is clicked
+    shortDescription:
+      "A once-in-a-lifetime opportunity to tackle real-world challenges by building AI-powered solutions, create what the world's leading pharmaceutical brands truly need, and connect directly with globally renowned industry leaders shaping the future of healthcare.",
+    thumbnail: "/images/events/medithon/poster.png",
+    status: "upcoming",
+    startDate: "2026-02-07T12:00:00",
+    endDate: "2026-02-08T12:00:00",
+    venue: "Plaksha University"
+  },
   {
     slug: "external-event",
     title: "TrackShift",
@@ -8,7 +22,7 @@ const staticEventsData = [
     shortDescription:
       "Brought to you by Mphasis F1 Foundation in association with DS Brar Center for GWiST and MoneyGram Haas F1 Team hosted at Plaksha University.",
     thumbnail: "/images/events/trackshift/poster.png",
-    status: "upcoming",
+    status: "ended",
     startDate: "2025-11-15T12:00:00",
     endDate: "2025-11-16T12:00:00",
     venue: "Plaksha University"

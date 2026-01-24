@@ -21,17 +21,7 @@ const teamData = {
         profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
         image: "/images/team/shreya.png"
       },
-      role: "Head of Internal Affairs"
-    },
-    {
-      id: 3,
-      profile: {
-        name: "Divy Gupta",
-        profileLink:
-          "https://www.instagram.com/_divy_gupta_44?igsh=Nm5xN2s2bW9zbjg2&utm_source=qr",
-        image: "/images/team/divy.png"
-      },
-      role: "Head of External Affairs"
+      role: "Co-Operations Lead"
     },
     {
       id: 4,
@@ -40,7 +30,7 @@ const teamData = {
         profileLink: "#",
         image: "/images/team/manavi.jpg"
       },
-      role: "Head of Marketing"
+      role: "Co-Operations Lead"
     },
     {
       id: 5,
@@ -49,30 +39,8 @@ const teamData = {
         profileLink: "#",
         image: "/images/team/maan.png"
       },
-      role: "Head of Design"
+      role: "Marketing & Design Lead"
     },
-    {
-      id: 6,
-      profile: {
-        name: "Trinav Talukdar",
-        profileLink:
-          "https://www.linkedin.com/in/trinav-prasad-talukdar-44b34428b/",
-        image: "/images/team/trinav.jpg"
-      },
-      role: "Head of Content"
-    },
-    {
-      id: 8,
-      profile: {
-        name: "Akshat Gupta",
-        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.jpg"
-      },
-      role: "Founding President (2024-25)"
-    }
-  ],
-  poc: [],
-  members: [
     {
       id: 1,
       profile: {
@@ -80,8 +48,11 @@ const teamData = {
         profileLink: "#",
         image: "/images/team/proshita.png"
       },
-      role: "Content"
-    },
+      role: "Content Lead"
+    }
+  ],
+  poc: [],
+  members: [
     {
       id: 5,
       profile: {
@@ -216,6 +187,35 @@ const teamData = {
   ],
   alumni: [
     {
+      id: 8,
+      profile: {
+        name: "Akshat Gupta",
+        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
+        image: "/images/team/Akshat.jpg"
+      },
+      role: "Founding President (2024-25)"
+    },
+    {
+      id: 6,
+      profile: {
+        name: "Trinav Talukdar",
+        profileLink:
+          "https://www.linkedin.com/in/trinav-prasad-talukdar-44b34428b/",
+        image: "/images/team/trinav.jpg"
+      },
+      role: "Head of Content (2024-25)"
+    },
+    {
+      id: 3,
+      profile: {
+        name: "Divy Gupta",
+        profileLink:
+          "https://www.instagram.com/_divy_gupta_44?igsh=Nm5xN2s2bW9zbjg2&utm_source=qr",
+        image: "/images/team/divy.png"
+      },
+      role: "Robotics (2024-25)"
+    },
+    {
       id: 1,
       profile: {
         name: "Raghav Sarna",
@@ -265,6 +265,22 @@ const teamData = {
 };
 
 teamData.members.sort((a, b) => a.profile.name.localeCompare(b.profile.name));
+
+// Classify and sort alumni: Core alumni first, then Member alumni, both alphabetically
+teamData.alumni.sort((a, b) => {
+  const coreRoles = ["President", "Head", "Lead", "Founding"];
+
+  const isACoreAlumni = coreRoles.some((role) => a.role.includes(role));
+  const isBCoreAlumni = coreRoles.some((role) => b.role.includes(role));
+
+  // If both are Core or both are Members, sort alphabetically by name
+  if (isACoreAlumni === isBCoreAlumni) {
+    return a.profile.name.localeCompare(b.profile.name);
+  }
+
+  // Core alumni come before Member alumni
+  return isACoreAlumni ? -1 : 1;
+});
 
 const TeamTimeLinePage = () => {
   return (

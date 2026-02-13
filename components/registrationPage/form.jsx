@@ -174,7 +174,7 @@ const ApplicationForm = () => {
 
   return (
     <div
-      className="flex justify-center items-center py-8 md:py-12 application-form-container mb-[50px] rounded-lg bg-[#ffffff0d] md:w-[175vh]"
+      className="flex justify-center items-center py-8 md:py-12 application-form-container mb-[50px] rounded-lg bg-[#ffffff0d] w-full max-w-[1100px]"
     >
       {success ? (
         <div className="text-center py-8 w-full">

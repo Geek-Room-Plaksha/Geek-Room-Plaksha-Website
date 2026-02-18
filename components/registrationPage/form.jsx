@@ -187,18 +187,17 @@ const ApplicationForm = () => {
           </Typography>
         </div>
       ) : (
-        <div className="flex flex-col md:flex-row items-start justify-between px-4 md:px-12 w-full">
-          {error && (
-            <div className="p-4 mb-6 w-full bg-red-900/20 border border-red-800 rounded-md text-red-400">
-              {error}
-            </div>
-          )}
-
+        <div className="flex flex-col md:flex-row items-start justify-between px-4 md:px-12 w-full max-w-[900px] mx-auto">
           <form
             onSubmit={handleSubmit}
             className="w-full md:flex md:flex-wrap md:gap-x-8 md:justify-between"
           >
-            <div className="md:w-[48%] md:flex-shrink-0 space-y-6">
+            {error && (
+              <div className="w-full p-4 mb-6 bg-red-900/20 border border-red-800 rounded-md text-red-400">
+                {error}
+              </div>
+            )}
+            <div className="md:flex-shrink-0 space-y-6 mx-auto">
               <div>
                 <input
                   type="text"
@@ -263,7 +262,7 @@ const ApplicationForm = () => {
               </div>
             </div>
 
-            <div className="md:w-[48%] md:flex-shrink-0 mt-6 md:mt-0 application-file-upload">
+            <div className="md:w-[48%] md:flex-shrink-0 mt-6 md:mt-0 application-file-upload mx-auto">
               <div className="mb-6">
                 <p className="mb-2 text-sm text-white">
                   Which team would you like to join?

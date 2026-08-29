@@ -63,15 +63,6 @@ const teamData = {
       role: "Tech"
     },
     {
-      id: 6,
-      profile: {
-        name: "Kuhuk Katiyar",
-        profileLink: "https://www.linkedin.com/in/kuhuk-katiyar-72322b303",
-        image: "/images/team/kuhuk.png"
-      },
-      role: "Content"
-    },
-    {
       id: 7,
       profile: {
         name: "Tista Tewani",
@@ -135,15 +126,6 @@ const teamData = {
         image: "/images/team/sahil patel.jpeg"
       },
       role: "Design"
-    },
-    {
-      id: 14,
-      profile: {
-        name: "Saanvi Bhaskar",
-        profileLink: "https://www.linkedin.com/in/saanvi-bhaskar-81366b2ba/",
-        image: "/images/team/saanvi.jpg"
-      },
-      role: "Content"
     },
     {
       id: 15,
@@ -287,6 +269,24 @@ const teamData = {
         image: "/images/team/arsh.png"
       },
       role: "Design (2024-25)"
+    },
+    {
+      id: 6,
+      profile: {
+        name: "Kuhuk Katiyar",
+        profileLink: "https://www.linkedin.com/in/kuhuk-katiyar-72322b303",
+        image: "/images/team/kuhuk.png"
+      },
+      role: "Content (2025-26)"
+    },
+    {
+      id: 14,
+      profile: {
+        name: "Saanvi Bhaskar",
+        profileLink: "https://www.linkedin.com/in/saanvi-bhaskar-81366b2ba/",
+        image: "/images/team/saanvi.jpg"
+      },
+      role: "Content (2025-26)"
     }
   ]
 };

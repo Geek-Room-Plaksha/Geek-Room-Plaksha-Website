@@ -1,31 +1,61 @@
 const staticEventsData = [
-    {
+  {
+    slug: "external-event",
+    title: "TrackShift 2026",
+    isHack: true,
+    isSlug: false, // External redirect — no internal detail page
+    externalUrl: "https://trackshift.in",
+    shortDescription:
+      "India's premier applied innovation challenge — a 24-hour hackathon merging motorsport's precision with AI, sustainability, and mobility. Organised by DS Brar Center for GWiST at Plaksha University in collaboration with TGR Haas F1 Team, Mphasis Foundation, and HackCulture.",
+    thumbnail: "/images/events/trackshift/poster.png",
+    status: "upcoming",
+    startDate: "2026-09-12T09:00:00",
+    endDate: "2026-09-13T18:00:00",
+    venue: "DS Brar Center for GWiST, Plaksha University"
+  },
+  {
+    slug: "prayas",
+    title: "Prayas",
+    isHack: true,
+    isSlug: true,
+    shortDescription:
+      "Plaksha's inter-college tech fest — a joint initiative by all the tech clubs on campus. Geek Room Plaksha collaborates with LEAP and GWiST to bring students from across the country together for two days of competition, collaboration, and discovery.",
+    thumbnail: "/images/events/prayas/poster.png",
+    coverPhoto: "/images/events/prayas/cover.png",
+    description:
+      "<p><strong>Prayas</strong> is Plaksha University's inter-college tech fest — a celebration of student-led innovation, open to participants from colleges across India. Hosted across September 19–20, 2026 on the Plaksha campus, the fest is a joint initiative by all the tech clubs at Plaksha University.</p><p>This year, <strong>Geek Room Plaksha</strong> joins forces with <strong>LEAP</strong> and <strong>GWiST</strong> to bring the fest to life — each club bringing its own flavour to a packed two-day schedule of competitive programming, AI challenges, robotics, and a lot more.</p><p><strong>What's in store 💡</strong></p><ul><li>🤖 Robotics, AI, and STEM challenges</li><li>💻 Competitive programming showdowns</li><li>🛠️ Hands-on workshops and live demos</li><li>🏆 Prize pool, goodies, and certificates for winners</li></ul><p>Stay tuned for the full event schedule and registration link — coming soon. Whether you write code, build circuits, or just love tech, there's a stage for you at Prayas.</p>",
+    startDate: "2026-09-19T10:00:00",
+    endDate: "2026-09-20T20:00:00",
+    venue: "Plaksha University, Mohali"
+  },
+  {
     slug: "external-event",
     title: "MediThon",
     isHack: true,
-    isSlug: false, // This indicates that the event should not have a slug page
-    externalUrl: "https://medithon.devpost.com/", // The URL to redirect to when "Learn More" is clicked
+    isSlug: false,
+    externalUrl: "https://medithon.devpost.com/",
     shortDescription:
       "A once-in-a-lifetime opportunity to tackle real-world challenges by building AI-powered solutions, create what the world's leading pharmaceutical brands truly need, and connect directly with globally renowned industry leaders shaping the future of healthcare.",
     thumbnail: "/images/events/medithon/poster.png",
-    status: "upcoming",
+    status: "ended",
     startDate: "2026-02-07T12:00:00",
     endDate: "2026-02-08T12:00:00",
     venue: "Plaksha University"
   },
   {
-    slug: "external-event",
-    title: "TrackShift",
+    slug: "colossus",
+    title: "Colossus '26",
     isHack: true,
-    isSlug: false, // This indicates that the event should not have a slug page
-    externalUrl: "https://trackshift.in", // The URL to redirect to when "Learn More" is clicked
+    isSlug: true,
     shortDescription:
-      "Brought to you by Mphasis F1 Foundation in association with DS Brar Center for GWiST and MoneyGram Haas F1 Team hosted at Plaksha University.",
-    thumbnail: "/images/events/trackshift/poster.png",
-    status: "ended",
-    startDate: "2025-11-15T12:00:00",
-    endDate: "2025-11-16T12:00:00",
-    venue: "Plaksha University"
+      "Plaksha University's annual intra-college tech fest — two days of competition, collaboration, and discovery. A joint initiative by Geek Room Plaksha, LEAP, GWiST, and CyDef.",
+    thumbnail: "/images/events/colossus/poster.png",
+    coverPhoto: "/images/events/colossus/cover.png",
+    description:
+      "<p><strong>Colossus '26</strong> is Plaksha University's annual intra-college tech fest, bringing together the brightest minds on campus for two days of competition, collaboration, and discovery.</p><p>Hosted across <strong>April 11–12, 2026</strong>, the fest is a joint initiative by four of Plaksha's student-led tech clubs — <strong>Geek Room Plaksha</strong>, <strong>LEAP</strong>, <strong>GWiST</strong>, and <strong>CyDef</strong> — each bringing their own unique flavour to the event.</p><p>From competitive programming and AI strategy to STEM challenges, cybersecurity workshops, and a carnival-style coding showdown, Colossus '26 is built to test and celebrate technical talent across every domain. Whether you're writing algorithms, cracking puzzles, or exploring the frontiers of AI, there's a stage here for you.</p><p><strong>Schedule 📅</strong></p><ul><li><strong>Day 1 — Saturday, 11 April:</strong> 6:00 PM – 9:00 PM → <em>Zero Hour</em> (hosted by GWiST)</li><li><strong>Day 2 — Sunday, 12 April:</strong><ul><li>11:30 AM – 1:00 PM → <em>Da Vinci Node</em> (hosted by CyDef)</li><li>2:00 PM – 5:00 PM → <em>Leverage</em> (hosted by LEAP)</li><li>6:00 PM – 9:00 PM → <em>Fair n Square</em> (hosted by Geek Room Plaksha)</li></ul></li></ul>",
+    startDate: "2026-04-11T18:00:00",
+    endDate: "2026-04-12T21:00:00",
+    venue: "Plaksha University, Mohali"
   },
   {
     slug: "bnb-punjab",

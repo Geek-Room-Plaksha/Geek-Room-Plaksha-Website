@@ -10,6 +10,7 @@ import { AnimatedTestimonialsDemo } from "@/components/Highlights/PastHighlighte
 import PartnersSection from "@/components/collaborations/Collab";
 import ContactForm from "@/components/contack-us/contact-us";
 import StatsDisplay from "@/components/Strip/strip";
+import ApplicationsCta from "@/components/applicationsCta/ApplicationsCta";
 
 export default function Home() {
   const [isSmall, setIsSmall] = useState(false);
@@ -57,6 +58,7 @@ export default function Home() {
       <main>
         <Hero isMobile={isLarge} />
         <Intro isMobile={isSmall} />
+        <ApplicationsCta />
         <StatsDisplay></StatsDisplay>
         {isSmall && <AnimatedTestimonialsDemo />}
         {!isSmall && <GalleryCarousel />}

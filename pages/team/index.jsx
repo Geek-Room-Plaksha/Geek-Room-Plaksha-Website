@@ -63,15 +63,6 @@ const teamData = {
       role: "Tech"
     },
     {
-      id: 6,
-      profile: {
-        name: "Kuhuk Katiyar",
-        profileLink: "https://www.linkedin.com/in/kuhuk-katiyar-72322b303",
-        image: "/images/team/kuhuk.png"
-      },
-      role: "Content"
-    },
-    {
       id: 7,
       profile: {
         name: "Tista Tewani",
@@ -137,15 +128,6 @@ const teamData = {
       role: "Design"
     },
     {
-      id: 14,
-      profile: {
-        name: "Saanvi Bhaskar",
-        profileLink: "https://www.linkedin.com/in/saanvi-bhaskar-81366b2ba/",
-        image: "/images/team/saanvi.jpg"
-      },
-      role: "Content"
-    },
-    {
       id: 15,
       profile: {
         name: "Jaskirat Kaur Anand",
@@ -179,8 +161,35 @@ const teamData = {
       id: 18,
       profile: {
         name: "Rohan Gupta",
-        profileLink: "https://www.linkedin.com/in/rohan-gupta-32474b1a0/",
-        image: "/images/team/rohan.jpg"
+        profileLink: "https://www.linkedin.com/in/rohan-gupta-dev/",
+        image: "/images/team/rohan.png"
+      },
+      role: "Tech"
+    },
+    {
+      id: 19,
+      profile: {
+        name: "Swapneel Premchand",
+        profileLink: "https://www.linkedin.com/in/swapneel-premchand-b35082360/",
+        image: "/images/team/swapneel.png"
+      },
+      role: "Tech"
+    },
+    {
+      id: 20,
+      profile: {
+        name: "Suchethan Ph",
+        profileLink: "https://www.linkedin.com/in/suchethan-ph-7207a4279/",
+        image: "/images/team/suchethan.png"
+      },
+      role: "Design"
+    },
+    {
+      id: 21,
+      profile: {
+        name: "Suryaansh",
+        profileLink: "https://www.linkedin.com/in/-suryaansh/",
+        image: "/images/team/suryaansh.png"
       },
       role: "Tech"
     }
@@ -260,6 +269,24 @@ const teamData = {
         image: "/images/team/arsh.png"
       },
       role: "Design (2024-25)"
+    },
+    {
+      id: 6,
+      profile: {
+        name: "Kuhuk Katiyar",
+        profileLink: "https://www.linkedin.com/in/kuhuk-katiyar-72322b303",
+        image: "/images/team/kuhuk.png"
+      },
+      role: "Content (2025-26)"
+    },
+    {
+      id: 14,
+      profile: {
+        name: "Saanvi Bhaskar",
+        profileLink: "https://www.linkedin.com/in/saanvi-bhaskar-81366b2ba/",
+        image: "/images/team/saanvi.jpg"
+      },
+      role: "Content (2025-26)"
     }
   ]
 };

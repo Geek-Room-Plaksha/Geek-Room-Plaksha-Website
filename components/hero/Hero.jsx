@@ -108,14 +108,6 @@ const Hero = ({ isMobile }) => {
         delay: 1.5
       },
       {
-        url: "/images/team/divy.png",
-        borderColor: "#00acb2",
-        id: "a3",
-        x: 8,
-        y: 70,
-        delay: 0.3
-      },
-      {
         url: "/images/team/manavi.jpg",
         borderColor: "#f15b22",
         id: "a4",
@@ -132,7 +124,7 @@ const Hero = ({ isMobile }) => {
         delay: 0.7
       },
       {
-        url: "/images/team/trinav.jpg",
+        url: "/images/team/proshita.png",
         borderColor: "#f15b22",
         id: "a6",
         x: 82,
@@ -387,43 +379,6 @@ const Hero = ({ isMobile }) => {
                         : "#F1F1F1"
                     }
                   />
-                  <Xarrow
-                    start={refsById["a1"]}
-                    end={refsById["a3"]}
-                    showHead={false}
-                    showTail={false}
-                    startAnchor={"middle"}
-                    endAnchor={"middle"}
-                    headShape={"circle"}
-                    tailShape={"circle"}
-                    tailSize={3}
-                    headSize={3}
-                    curveness={0}
-                    strokeWidth={2}
-                    zIndex={-2}
-                    headColor={
-                      isGrowHighlighted || isBuildHighlighted
-                        ? "#00acb2"
-                        : isTextHighlighted
-                        ? "#f15b22"
-                        : "#F1F1F1"
-                    }
-                    tailColor={
-                      isGrowHighlighted || isBuildHighlighted
-                        ? "#00acb2"
-                        : isTextHighlighted
-                        ? "#f15b22"
-                        : "#F1F1F1"
-                    }
-                    lineColor={
-                      isGrowHighlighted || isBuildHighlighted
-                        ? "#00acb2"
-                        : isAvatarHighlighted
-                        ? "#f15b22"
-                        : "#F1F1F1"
-                    }
-                  />
-
                   <Xarrow
                     start="flutter"
                     end="web"

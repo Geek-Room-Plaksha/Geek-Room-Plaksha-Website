@@ -4,7 +4,7 @@ const staticEventsData = [
     title: "TrackShift 2026",
     isHack: true,
     isSlug: false, // External redirect — no internal detail page
-    externalUrl: "https://trackshift.in",
+    externalUrl: "https://hackculture.io/challenges/trackshift-2026",
     shortDescription:
       "India's premier applied innovation challenge — a 24-hour hackathon merging motorsport's precision with AI, sustainability, and mobility. Organised by DS Brar Center for GWiST at Plaksha University in collaboration with TGR Haas F1 Team, Mphasis Foundation, and HackCulture.",
     thumbnail: "/images/events/trackshift/poster.png",
@@ -18,6 +18,7 @@ const staticEventsData = [
     title: "Prayas",
     isHack: true,
     isSlug: true,
+    // No registrationLink or externalUrl — registration not open yet.
     shortDescription:
       "Plaksha's inter-college tech fest — a joint initiative by all the tech clubs on campus. Geek Room Plaksha collaborates with LEAP and GWiST to bring students from across the country together for two days of competition, collaboration, and discovery.",
     thumbnail: "/images/events/prayas/poster.png",

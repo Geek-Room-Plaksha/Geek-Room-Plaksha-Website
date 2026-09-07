@@ -192,6 +192,63 @@ const teamData = {
         image: "/images/team/suryaansh.png"
       },
       role: "Tech"
+    },
+    {
+      id: 22,
+      profile: {
+        name: "Achaljot Kaur",
+        profileLink:
+          "https://www.linkedin.com/in/achaljot-kaur-1a2a98396?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+        image: "/images/team/achaljot.jpg"
+      },
+      role: "Content"
+    },
+    {
+      id: 23,
+      profile: {
+        name: "Arushi Vohra",
+        profileLink: "https://www.linkedin.com/in/arushi-vohra-483b7937a",
+        image: "/images/team/arushi.png"
+      },
+      role: "Design"
+    },
+    {
+      id: 24,
+      profile: {
+        name: "Chahna Agarwal",
+        profileLink:
+          "https://www.linkedin.com/in/chahna-agarwal-469985257?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+        image: "/images/team/chahna.jpg"
+      },
+      role: "Marketing"
+    },
+    {
+      id: 25,
+      profile: {
+        name: "Samreen Tole",
+        profileLink:
+          "https://www.linkedin.com/in/samreen-tole?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+        image: "/images/team/samreen.jpg"
+      },
+      role: "Design"
+    },
+    {
+      id: 26,
+      profile: {
+        name: "Valli Penmetsa",
+        profileLink: "https://www.linkedin.com/in/nandana-penmetsa-95881837b/",
+        image: "/images/team/valli.jpg"
+      },
+      role: "Design"
+    },
+    {
+      id: 27,
+      profile: {
+        name: "Yuvika Mehta",
+        profileLink: "https://www.linkedin.com/in/yuvika-mehta",
+        image: "/images/team/yuvika.png"
+      },
+      role: "Content"
     }
   ],
   alumni: [
